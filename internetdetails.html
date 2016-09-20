@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flowindex.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/layer/laydate/laydate.js"></script>
+    <script src="js/internetdetails.js"></script>
+    <title>流量诊断</title>
+</head>
+<body>
+<div class="container bg-container">
+    <div class="row xq-head">
+        <a href="./flowdetails">
+            <div class="flow-bg-back"></div>
+        </a>
+        上网详情
+    </div>
+    <div class="row xq-riqi">
+        <label class="">选择查询日期：</label>
+
+      	 <label class="inf-services" id = "errormsg">sdsdsds</label>
+    </div>
+    <div class="flow-datachose">
+    <input class="form-control flow-form-control layer-date" placeholder="年 月 日"
+                 id="startdate" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})">
+    <button type="button" class="btn btn-info" id = "querybtn">查询</button>
+    </div>
+    <div class="row xq-number">
+        <div class="flow-bg-user"></div>
+        <span class="xq-numberleft" id ="phonenum">13777868324</span>
+        <span class="xq-numberright">1GB=1024MB,1MB=1024Kb</span>
+    </div>
+    <table class="table table-bordered" id ="tableid">
+        
+    </table>
+    <div class="row flow-xd">
+        温馨提示：<br>
+        尊敬的用户，您可按日查询单日流量详单，最多可查询历史3个月的数据。流量详单数据仅供参考使用。如有疑问，请联系在线客服。
+    </div>
+</div>
+
+</body>
+
+</html>

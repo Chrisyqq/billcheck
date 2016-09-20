@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flowindex.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flowindex.js"></script>
+    <title>流量诊断</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="row m-flow-head">
+        <p>流量诊断</p>
+    </div>
+
+    <div class="row flow-search">
+        <form>
+            <div class="input-group  flow-search-cnumber">
+                <input type="text" class="form-control form-control-cucc" id="flow-search-number" value="">
+                <span class="input-group-btn"><button type="button" class="btn btn-primary btn-primary-cucc">查询</button></span>
+            </div>
+        </form>
+    </div>
+
+    <div class="histogram-flow">
+        <div class="row traffic-usage">
+            <div class="traffic-usage-qian">
+                <div class="cucc-circle">
+                    <div class="cucc-circle-icon"></div>
+                </div>
+                <span>当前的号码信息</span>
+            </div>
+        </div>
+        <div class="histogram-flow-box">
+            <div class="histogram-flow-box-head">
+                <div class="person-name">尊敬的白**,您好!</div>
+                <div class="person-vip">您是我公司尊贵的<span>五</span>星用户</div>
+                <div class="person-star">
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box dark"></div>
+                </div>
+            </div>
+            <div class="histogram-flow-box-zhanghao">
+                <div class="phone-number">
+                    <div class="phone"></div>
+                    <div class="number">153****1111<span>[切换]</span></div>
+                </div>
+                <div class="phone-number-state">账户欠费:<span>8.00元</span><button>充值</button></div>
+                <div class="phone-number-state">当前号码状态:<span>停机</span><button>我要开机</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row traffic-usage-count" id="timouth">
+        <div class="row traffic-usage">
+            <div class="traffic-usage-qian">
+                <div class="cucc-circle">
+                    <div class="cucc-circle-icon"></div>
+                </div>
+                <span>近6个月的消费趋势</span>
+                <div class="traffic-usage-handle" id="chutiyan"><img src=""><a id="flow-banli">详单</a></div>
+            </div>
+            <div class="traffic-usage-count-box">
+                <div class="phone-fee">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="row flow-timeline">
+        <div class="flow-timeline-qian">
+            <div class="cucc-circle">
+                <div class="cucc-circle-icon"></div>
+            </div>
+            <span>温馨提示</span>
+            <div class="traffic-usage-handle"><a href="#"></a></div>
+        </div>
+    </div>
+
+    <div class="row flow-line-chart">
+        <div class="left">
+            <div class="consume-situation-head">
+                <p><span>3</span>月消费情况</p>
+            </div>
+            <div class="consume-situation-bill-check">
+                <div class="bill-check-head">账单查询</div>
+                <div class="bill-check-list">
+                    <p>账户账单</p>
+                    <p>号码账单</p>
+                </div>
+            </div>
+            <div class="consume-situation-head-bill-check">
+                <div class="bill-check-head">详单</div>
+                <div class="bill-check-list">
+                    <p>语音详单</p>
+                    <p>上网详单</p>
+                    <p>短信详单</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="yewu-list down">
+                <div class="yewu-tanhao"></div>
+                <div class="yewu-word">您有订购的业务有点多哦！</div>
+                <div class="yewu-turn"></div>
+            </div>
+
+            <div class="yewu-detail" style="display: none">
+                <div class="yewu-detail-head">
+                    本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>起始时间</th>
+                        <th>上网时长</th>
+                        <th>使用流量（KB）</th>
+                        <th>地点</th>
+                        <th>地点</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="yewu-list down">
+                <div class="yewu-tanhao"></div>
+                <div class="yewu-word">您有订购的业务有点多哦！</div>
+                <div class="yewu-turn"></div>
+            </div>
+            <div class="yewu-detail" style="display: none">
+                <div class="yewu-detail-head">
+                    本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>起始时间</th>
+                        <th>上网时长</th>
+                        <th>使用流量（KB）</th>
+                        <th>地点</th>
+                        <th>地点</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="yewu-list up">
+                <div class="yewu-tanhao"></div>
+                <div class="yewu-word">您有订购的业务有点多哦！</div>
+                <div class="yewu-turn"></div>
+            </div>
+            <div class="yewu-detail" style="display:block;">
+                <div class="yewu-detail-head">
+                    本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>起始时间</th>
+                        <th>上网时长</th>
+                        <th>使用流量（KB）</th>
+                        <th>地点</th>
+                        <th>地点</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <th>07:30:32</th>
+                        <th>33分54秒</th>
+                        <th>353</th>
+                        <th>杭州</th>
+                        <th>杭州</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--flow banli-->
+    <div class="flow-cucc-dingou" style="display: block;" id="flow-dingou">
+        <div class="flow-cucc-dingoutitle">
+            流量包办理<i class="fa fa-times" id="over-dingou"></i>
+        </div>
+        <div class="flow-cucc-dingoubaoyue">
+            <div class="flow-cucc-dingoubyhead">
+                <div class="flow-cucc-dingoubyhl"><i class="fa fa-circle"></i> 包月流量包</div>
+                <div class="flow-cucc-dingoubyhr" id="go-whatmouth"><i class="fa fa-circle"></i>什么是包月包</div>
+            </div>
+
+            <div class="form-group flow-form-group" id="positionGroup">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">100M/10元
+                    </label>
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">300M/20元
+                    </label>
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">500M/30元
+                    </label>
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">1G/50元
+                    </label>
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">2G/70元
+                    </label>
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">3G/100元
+                    </label>
+                </div>
+            </div>
+
+            <!-- /input-group -->
+        </div>
+        <div class="flow-cucc-dingoubaoyue">
+            <div class="flow-cucc-dingoubyhead">
+                <div class="flow-cucc-dingoubyhl"><i class="fa fa-circle"></i> 包月流量包</div>
+                <div class="flow-cucc-dingoubyhr" id="go-whatadd"><i class="fa fa-circle"></i>什么是加餐包</div>
+            </div>
+            <div class="form-group flow-form-group" id="">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">100M/10元
+                    </label>
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">300M/20元
+                    </label>
+                    <label>
+                        <input type="radio" name="positions" value="toast-bottom-center">500M/30元
+                    </label>
+
+                </div>
+            </div>
+        </div>
+        <div class="flow-cucc-dingoujian">
+            <p>温馨提醒：新订购流量包无法抵消订购前产生的流量</p>
+            <button type="button" class="btn btn-info" id="go-dingouover">确认订购</button>
+        </div>
+    </div>
+    <div class="flow-cucc-whatmouth" style="display: none" id="flow-whatmouth">
+        <div class="flow-cucc-whatmouthtitle">
+            流量包办理<i class="fa fa-mail-reply" id="backone-dingou"></i>
+        </div>
+
+        <div class="flow-cucc-whatmouthneirong"></div>
+    </div>
+
+    <div class="flow-cucc-whatadd" style="display: none" id="flow-whatadd">
+        <div class="flow-cucc-whataddtitle">
+            流量包办理<i class="fa fa-mail-reply" id="backtwo-dingou"></i>
+        </div>
+
+        <div class="flow-cucc-whataddneirong"></div>
+    </div>
+
+    <div class="flow-cucc-dingou" style="display: none;" id="flow-dingouover">
+        <div class="flow-cucc-dingoutitle">
+            流量包办理<i class="fa fa-times" id="success-dingou"></i>
+        </div>
+        <div class="flow-cucc-succesdingou">
+            <i class="fa fa-check"></i>
+            <p class="flow-cucc-succesdingouqian">您的订购请求已提交</p>
+            <p class="flow-cucc-succesdingouhou">注：能否成功办理请已收到短信为准哦</p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    (function () {
+
+    })();
+</script>
+</html>

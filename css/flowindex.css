@@ -136,12 +136,52 @@ html,body{-webkit-text-size-adjust:none;}
         background: url("../img/questioncirclebig.png") no-repeat center;
         background-size: 100% 100%;
     }
-
+    /* account-detail */
+    .account-detail{
+        height: 730px;
+    }
+    .account-detail-biaoge{
+        width: 100%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .account-detail-list{
+        width: 30%;
+        float: left;
+        height: auto;
+        border: 1px solid #b3b3b3;
+    }
+    .account-detail-list-head{
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        background: #f0f3f6;
+        border: 1px solid #b3b3b3;
+        color: #7a8490;
+        font-size: 50px;
+        text-align: center;
+    }
+    .account-detail-list-big{
+        width: 100%;
+        height: 200px;
+        background: #ffffff;
+        border: 1px solid #b3b3b3;
+        font-size: 30px;
+        color: #595959;
+    }
+    .account-detail-list-small{
+        width: 100%;
+        font-size: 30px;
+        height: 140px;
+        background: #ffffff;
+        color: #595959;
+        border: 1px solid #b3b3b3;
+    }
     /*histogram-flow*/
     .histogram-flow {
         width: 400px;
         height: 260px;
-
         float: left;
         margin-left: 10px;
         margin-right: 30px;
@@ -165,6 +205,9 @@ html,body{-webkit-text-size-adjust:none;}
         color: #4f5f6f;
         font-size: 20px;
         font-weight: bold;
+    }
+    .histogram-flow-box-head .person-name .star{
+        display: none;
     }
     .person-vip{
         width: 100%;
@@ -210,6 +253,9 @@ html,body{-webkit-text-size-adjust:none;}
         font-size: 16px;
         margin-left: 10px;
     }
+    .histogram-flow-box-zhanghao .phone-number button{
+        display: none;
+    }
     .histogram-flow-box-zhanghao .phone-number .phone{
         width: 10px;
         height: 16px;
@@ -253,48 +299,6 @@ html,body{-webkit-text-size-adjust:none;}
     }
 
 
-
-
-    /*flow-line-chart*/
-    .echarts {
-        background: #ffffff;
-        width: 1290px;
-        left: -50px;
-        margin-left: -20px;
-        height: 280px;
-    }
-    .test{
-        width: 800px !important;
-    }
-    .checkbox-inline,
-    .radio-inline,
-    .checkbox-inline + .checkbox-inline,
-    .radio-inline + .radio-inline {
-        margin: 0 15px 0 0;
-    }
-
-    .navbar-toggle {
-        background-color: #fff;
-    }
-
-    .J_menuTab {
-        -webkit-transition: all .3s ease-out 0s;
-        transition: all .3s ease-out 0s;
-    }
-
-    ::-webkit-scrollbar-track {
-        background-color: #F5F5F5;
-    }
-
-    ::-webkit-scrollbar {
-        width: 6px;
-        background-color: #F5F5F5;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: #999;
-    }
-
     /*flow usecase*/
     .traffic-usage-count {
         width: 700px;
@@ -307,9 +311,10 @@ html,body{-webkit-text-size-adjust:none;}
         background: #ffffff;
         float: left;
         min-height: 220px;
-        margin-left: 18px;
     }
-
+    .urgent-start-another .traffic-usage-count-box{
+        width: 500px;
+    }
     .count {
         padding-left: 30px;
         padding-right: 30px;
@@ -394,7 +399,6 @@ html,body{-webkit-text-size-adjust:none;}
         background: #f0f4f7;
         display: none;
     }
-
     .flow-timeline-qian {
         position: relative;
         float: left;
@@ -402,7 +406,30 @@ html,body{-webkit-text-size-adjust:none;}
         clear: both;
         width: 100%;
     }
-
+    .wenxin-tishi{
+        display: none;
+    }
+    .flow-line-chart .wenxin-tishi{
+        color: #4f5f6f;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        display: block;
+    }
+    .flow-line-chart .wenxin-tishi .wenxin-tishi-title{
+           color: #ff0000;
+           float: left;
+           width: 100px;
+       }
+    .flow-line-chart .wenxin-tishi .wenxin-tishi-title .wenxin-tishi-img{
+        width: 14px;
+        height: 14px;
+        background: url("../img/wujiaoxing.png") no-repeat center;
+        background-size: 100%;
+        float: left;
+    }
     .flow-timeline-qian span {
         float: left;
         font-size: 1.4em;
@@ -450,6 +477,205 @@ html,body{-webkit-text-size-adjust:none;}
         display: block;
     }
 
+    /* urgrntstart */
+    .urgent-all{
+        width: 1170px;
+        height: 680px;
+        background: #ffffff;
+    }
+    .urgent-all .left{
+        width: 100px;
+        height: 680px;
+        background: #ffffff;
+        float: left;
+    }
+    .urgent-all .left .start-flow{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #a0a0a0;
+        background: #ffffff;
+        float: right;
+        text-align: center;
+        cursor: pointer;
+    }
+    .urgent-all .left .start-flow p{
+        margin-top: 6px;
+        color: #4f5f6f;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .start-flow .phone-img{
+        width: 30px;
+        height: 50px;
+        margin: 10px auto 0 auto;
+        background: url("../img/phone.png") no-repeat center;
+        background-size: 100% 100%;
+    }
+    .start-flow .computer-img{
+        width: 50px;
+        height: 50px;
+        margin: 10px auto 0 auto;
+        background: url("../img/computer.png") no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .urgent-all .right{
+        width: 1070px;
+        height: 680px;
+        background: #f0f3f6;
+        float: right;
+    }
+    .urgent-all .right .head{
+        width: 1070px;
+        height: 40px;
+        font-size: 18px;
+        text-align: center;
+        background: #12b7f5;
+        color: #ffffff;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+
+    .urgent-all .histogram-flow {
+        width: 450px;
+        float: left;
+        min-height: 260px;
+    }
+    .urgent-all .histogram-flow-box{
+        width: 100%;
+        height: 220px;
+        background: #ffffff;
+        float: left;
+    }
+    .urgent-all .traffic-usage-count {
+        width: 450px;
+        float: left;
+        min-height: 260px;
+    }
+    .urgent-all .flow-line-chart {
+        position: relative;
+        width: 1000px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: 11px;
+        color: #4f6072;
+        min-height: 300px;
+    }
+
+    .urgent-all .flow-line-chart .wenxin-tishi{
+        padding-left: 60px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+
+    .urgent-all .flow-timeline-qian {
+        position: relative;
+        float: left;
+        line-height: 40px;
+        clear: both;
+        width: 100%;
+    }
+    .urgent-all .flow-timeline-qian  .cucc-circle-icon {
+        width: 10px;
+        height: 10px;
+        margin-top: 15px;
+        margin-right: 30px;
+        border-radius: 5px;
+        background: #a0a0a0;
+    }
+    .urgent-all-wenxin-tishi {
+        color: #4f5f6f;
+    }
+    .urgent-all-wenxin-tishi span{
+        color: #4f5f6f;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .urgent-start-local .urgent-start-local-head{
+        width: 90%;
+        height: 60px;
+        line-height: 60px;
+        font-size: 22px;
+        color: #4f5f6f;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+    .urgent-start-local .urgent-start-local-state{
+        width: 60%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 22px;
+        color: #4f5f6f;
+        margin-left: 10%;
+    }
+    .urgent-start-local .urgent-start-local-state span{
+
+        float: right;
+    }
+    .urgent-start-local .urgent-start-local-state .red{
+        color: #ff0000;
+
+    }
+    .urgent-start-local .urgent-start-local-button{
+        width: 30%;
+        height: 40px;
+        border-radius: 10px;
+        background: #26b8f3;
+        text-align: center;
+        line-height: 40px;
+        float: right;
+        color: #ffffff;
+        margin-right: 20px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .urgent-start-another-local .one{
+        border-bottom: dashed 1px #bfbfbf;
+    }
+    .urgent-start-another-local .urgent-start-another-list{
+        height: 110px;
+        position: relative;
+    }
+    .urgent-start-another-local .urgent-start-local-head{
+        width: 90%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        color: #4f5f6f;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+    .urgent-start-another-local .urgent-start-local-state{
+        width: 40%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        color: #4f5f6f;
+        margin-left: 10%;
+    }
+    .urgent-start-another-local .urgent-start-local-state .urgent-start-local-button{
+        position: absolute;
+        width: 30%;
+        height: 30px;
+        border-radius: 6px;
+        background: #26b8f3;
+        text-align: center;
+        line-height: 30px;
+        right: 10px;
+        bottom: 20px;
+        float: right;
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .urgent-start-another-local .urgent-start-local-state span{
+        float: right;
+    }
+    .urgent-start-another-local .urgent-start-local-state .red{
+        color: #ff0000;
+
+    }
+
     /*flow-line-chart*/
     .flow-line-chart {
         position: relative;
@@ -462,7 +688,7 @@ html,body{-webkit-text-size-adjust:none;}
     }
     .flow-line-chart .left{
       width: 200px;
-      min-height: 300px;
+      min-height: 290px;
       background: #ffffff;
       float: left;
     }
@@ -479,9 +705,15 @@ html,body{-webkit-text-size-adjust:none;}
     .flow-line-chart .left .consume-situation-bill-check{
         width: 95%;
         margin: 0 auto 0 auto;
-        height: 120px;
+        height: 100px;
         color: #2ab6f1;
         border-bottom: 1px solid #e5e5e5;
+    }
+    .flow-line-chart .left .consume-situation-head-bill-check{
+        width: 95%;
+        margin: 0 auto 0 auto;
+        height: 80px;
+        color: #2ab6f1;
     }
     .bill-check-head{
         margin: 0 auto 0 auto;
@@ -596,7 +828,7 @@ html,body{-webkit-text-size-adjust:none;}
     .flow-cucc-mmyz {
         display: none;
         width: 400px;
-        min-height: 300px;
+        min-height: 250px;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -607,11 +839,7 @@ html,body{-webkit-text-size-adjust:none;}
         border-radius: 4px;
         z-index: 9999;
     }
-    .flow-cucc-mmyz .flow-cucc-dingoubaoyue{
-        padding-right: 20px;
-        padding-left: 20px;
-        height: 110px;
-    }
+
     .flow-cucc-mmyz .flow-cucc-dingoubaoyue h1{
         font-size: 1.2em;
         color: #4f5f6f;
@@ -742,6 +970,36 @@ html,body{-webkit-text-size-adjust:none;}
         font-size: 1.6em;
         font-weight: 900;
     }
+    .flow-cucc-dingoutitle .user{
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: #4f5f6f;
+        font-size: 14px;
+        text-align: left;
+        line-height: 30px;
+    }
+    .flow-cucc-dingoutitle .close{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        background: url("../img/close.png") no-repeat center;
+        background-size: 100%;
+        cursor: pointer;
+    }
+    .flow-cucc-dingoutitle .user-img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        float: left;
+        background: url("../img/usercircle.png") no-repeat center;
+        background-size: 100%;
+    }
 
     .flow-cucc-whatmouthtitle {
         width: 100%;
@@ -785,17 +1043,85 @@ html,body{-webkit-text-size-adjust:none;}
         left: 5px;
         top: 7px;
     }
+    .select-serve-password{
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        margin-left: 200px;
+        margin-bottom: 20px;
+    }
+    .select-serve-password .active {
 
-    .flow-cucc-dingoubaoyue {
+        color: #5ebadd !important;
+        border-bottom: 1px solid #5ebadd !important;
+    }
+    .select-serve-password .serve {
+        float: left;
+        cursor: pointer;
+        width: 50%;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        color: #4f5f6f;
+        border-bottom: 1px solid #4f5f6f;
+    }
+    .select-serve-password .random{
+        width: 50%;
+        cursor: pointer;
+        height: 30px;
+        text-align: center;
+        float: left;
+        line-height: 30px;
+        color: #4f5f6f;
+        border-bottom: 1px solid #4f5f6f;
+    }
+    .select-serve-random-all{
         width: 100%;
+        height: 30px;
+        border-bottom: #dcdfe4 solid 1px;
+    }
+    .select-serve-random{
+        width: 90%;
+        height: 30px;
+        margin-left: 5%;
+        line-height: 30px;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .select-serve-random .active{
+        color: #5caccb;
+    }
+    .select-serve-random .internet{
+        text-align: center;
+        width: 30%;
+        line-height: 30px;
+        border-right: #dcdfe4 solid 1px;
+        float: left;
+    }
+    .select-serve-random .voice{
+        width: 30%;
+        line-height: 30px;
+        float: left;
+        border-right: #dcdfe4 solid 1px;
+        text-align: center;
+    }
+    .select-serve-random .message{
+        width: 30%;
+        line-height: 30px;
+        float: left;
+        text-align: center;
+    }
+    .flow-cucc-dingoubaoyue {
+        width: 90%;
+        float: left;
         height: 100px;
-        border-bottom: dashed 1px #dcdfe4;
+        margin-left: 5%;
     }
 
     .flow-form-group {
-        height: 120px !important;
+        height: 40px !important;
         margin-left: 4%;
-        margin-top: -10px;
     }
 
     .flow-form-group label {
@@ -807,6 +1133,31 @@ html,body{-webkit-text-size-adjust:none;}
         margin-top: 5px;
         color: #5ebadd;
         font-size: 0.875em !important;
+    }
+    .flow-form-group .recharge {
+        width: 40%;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 0.875em !important;
+        color: #586776 !important;
+    }
+    .flow-form-group .recharge input{
+        float: left !important;
+    }
+    .flow-form-group .zhifubao-img {
+        width: 18px;
+        height: 18px;
+        float: left;
+        background: url("../img/zhifdubao.png") no-repeat center;
+        background-size: 100%;
+    }
+    .flow-form-group .weixin-img {
+        width: 18px;
+        height: 18px;
+        float: left;
+        background: url("../img/weixin.png") no-repeat center;
+        background-size: 100%;
     }
 
     .flow-form-group span {
@@ -829,28 +1180,22 @@ html,body{-webkit-text-size-adjust:none;}
     }
 
     .flow-cucc-dingoubyhl {
-        position: absolute;
-        left: 20px;
+        position: relative;
+        width: 100%;
+        padding-left: 20px;
         margin-top: 6px;
-    }
 
-    .flow-cucc-dingoubyhr {
+    }
+    .flow-cucc-dingoubyhl:after{
+        content: '';
         position: absolute;
-        right: 20px;
-        margin-top: 6px;
-        cursor: pointer;
-        font-size: 12px !important;
-    }
-
-    .flow-cucc-dingoubyhr div {
-        float: left;
-        margin-right: 4px;
-        margin-top: 3px;
-        width: 12px;
-        height: 12px;
-        background: url("../img/questioncircle.png") no-repeat center;
-        background-size: 100% 100%;
-
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #a0a0a0;
+        left: 0;
+        top: 6px;
+        color: #677480;
     }
 
     .flow-cucc-dingoujian {
@@ -983,6 +1328,7 @@ html,body{-webkit-text-size-adjust:none;}
         background: #f6f6f6;
         height: 40px;
         line-height: 40px;
+        display: none;
         font-weight: 900;
     }
 
@@ -1014,27 +1360,42 @@ html,body{-webkit-text-size-adjust:none;}
         width: 200px;
         margin-top: -10px;
     }
-
     .xq-number {
+        width: 1170px;
+        border: 1px solid #959595;
+        margin-top: 20px;
+        margin-bottom: 20px;
         position: relative;
-        background: #f0f4f7;
+        background: #f4f4f4;
         height: 30px;
         line-height: 30px;
     }
-
-    .flow-bg-user {
+    .xq-number .point{
         position: absolute;
-        width: 20px;
-        height: 20px;
-        top: 5px;
-        left: 10px;
-        background: url("../img/user.png") no-repeat center;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #a0a0a0;
+        top: 10px;
+        left: 30px;
         background-size: 100% 100%;
     }
-
+    .xq-number select{
+        width: 60px;
+        height: 20px;
+        position: absolute;
+        left: 180px;
+        top: 5px;
+        border: 1px solid #aaaaaa;
+        border-radius: 4px;
+        background: #ffffff;
+    }
+    .internet-detail-table thead{
+        height: 60px !important;
+    }
     .xq-numberleft {
         color: #4f5f6f;
-        margin-left: 30px;
+        margin-left: 60px;
         font-size: 1.6em;
     }
 
@@ -1385,6 +1746,9 @@ html,body{-webkit-text-size-adjust:none;}
         line-height: 50px;
         background: #F6F6F6;
     }
+    .m-flow-head .flow-bg-back{
+        margin-top: 4px;
+    }
 
     .flow-search {
         background: #d6dde5;
@@ -1392,7 +1756,9 @@ html,body{-webkit-text-size-adjust:none;}
         padding-right: 30px;
         padding-left: 30px;
     }
-
+    .internet-detail-flow-search{
+        display: none;
+    }
     .flow-search-cnumber {
         margin: 10px auto 0 auto;
         height: 40px;
@@ -1415,7 +1781,9 @@ html,body{-webkit-text-size-adjust:none;}
 
     .traffic-usage {
         border-bottom: 1px solid #a7a8aa;
+        border-top: 1px solid #a7a8aa;
         height: 40px;
+        width: 100%;
         background: #f0f4f7;
     }
 
@@ -1502,16 +1870,393 @@ html,body{-webkit-text-size-adjust:none;}
         background: url("../img/questioncirclebig.png") no-repeat center;
         background-size: 100% 100%;
     }
+    /* account-detail */
+    .account-detail{
+        height: 730px;
+    }
+    .account-detail-biaoge{
+        width: 100%;
+        height: auto;
 
+        margin-top: 20px;
+    }
+    .account-detail-list{
+        width: 33%;
+        float: left;
+        height: auto;
+        border: 1px solid #b3b3b3;
+    }
+    .account-detail-list-head{
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        background: #f0f3f6;
+        border: 1px solid #b3b3b3;
+        color: #7a8490;
+        font-size: 14px;
+        text-align: center;
+    }
+    .account-detail-list-big{
+        width: 100%;
+        height: 200px;
+        background: #ffffff;
+        border: 1px solid #b3b3b3;
+        font-size: 14px;
+        color: #595959;
+    }
+    .account-detail-list-small{
+        width: 100%;
+        font-size: 14px;
+        height: 140px;
+        background: #ffffff;
+        color: #595959;
+        border: 1px solid #b3b3b3;
+    }
     /**/
     .histogram-flow {
+        width: 100%;
+        height: 80px;
+        display: block;
+
+    }
+    .histogram-flow .traffic-usage{
         display: none;
+    }
+    .histogram-flow-box{
+        width: 100%;
+        height: 80px;
+        float: left;
+    }
+
+    .histogram-flow-box-head{
+        width: 100%;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .histogram-flow-box-head .person-name{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        color: #4f5f6f;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .histogram-flow-box-head .person-name .star{
+        width: 60px;
+        float: left;
+    }
+    .histogram-flow-box-head .person-name .star .person-star-box{
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+        margin-top: 4px;
+        float: left;
+    }
+    .histogram-flow-box-head .person-name .star .light{
+        background: url("../img/lightstar.png") no-repeat center;
+        background-size: 100%;
+    }
+    .person-vip{
+        display: none;
+    }
+    .person-star{
+        display: none;
+    }
+    .person-star .person-star-box{
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+        float: left;
+    }
+    .person-star .light{
+        background: url("../img/lightstar.png") no-repeat center;
+        background-size: 100%;
+    }
+    .person-star .dark{
+        background: url("../img/darkstar.png") no-repeat center;
+        background-size: 100%;
+    }
+    .histogram-flow-box-zhanghao{
+        width: 100%;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    .histogram-flow-box-zhanghao .qianfei{
+
+    }
+    .histogram-flow-box-zhanghao .tinji{
+        display: none;
+    }
+    .histogram-flow-box-zhanghao .phone-number{
+        color: #4f5f6f;
+        font-size: 16px;
+        width: 100%;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #c0c0c0;
+    }
+    .histogram-flow-box-zhanghao .phone-number span{
+        color: #12b7f5;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .histogram-flow-box-zhanghao .phone-number button{
+        width: 80px;
+        height: 22px;
+        background: #12b7f5;
+        color: #ffffff;
+        font-size: 12px;
+        border: none;
+        line-height: 20px;
+        margin-top: 4px;
+        letter-spacing: 1px;
+        position: absolute;
+        right: 15px;
+    }
+    .histogram-flow-box-zhanghao .phone-number .phone{
+        width: 10px;
+        height: 14px;
+        background: url("../img/phone.png") no-repeat center;
+        float: left;
+        margin-top: 6px;
+    }
+    .histogram-flow-box-zhanghao .phone-number .number{
+        float: left;
+        margin-left: 6px;
+    }
+    .histogram-flow-box-zhanghao .phone-number-state{
+        color: #4f5f6f;
+        font-size: 14px;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+    }
+    .histogram-flow-box-zhanghao .phone-number-state span{
+        color: #fb0d1c;
+        margin-left: 10px;
+    }
+    .histogram-flow-box-zhanghao .phone-number-state button{
+        width: 80px;
+        height: 22px;
+        background: #12b7f5;
+        color: #ffffff;
+        float: right;
+        font-size: 12px;
+        border: none;
+        line-height: 20px;
+        margin-top: 2px;
+        letter-spacing: 2px;
+        position: absolute;
+        right: 15px;
+    }
+    /* urgrntstart */
+    .urgent-flow-search{
+        display: none;
+    }
+    .urgent-all{
+        height: 680px;
+        background: #ffffff;
+    }
+    .urgent-all .left{
+        width: 100%;
+        height: 30px;
+        background: #ffffff;
+        float: left;
+    }
+    .urgent-all .left .start-flow{
+        width: 50%;
+        height: 30px;
+        line-height: 30px;
+        background: #ffffff;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+    }
+    .urgent-all .left .start-flow span{
+        color: #4f5f6f;
+        font-size: 14px;
+        font-weight: bold;
+        float: left;
+    }
+    .start-flow .phone-img{
+        width: 10px;
+        height: 15px;
+        float: left;
+        margin-left: 30%;
+        margin-top: 6px;
+        background: url("../img/phone.png") no-repeat center;
+        background-size: 100% 100%;
+    }
+    .start-flow .computer-img{
+        width: 20px;
+        height: 15px;
+        float: left;
+        margin-left: 30%;
+        margin-top: 6px;
+        background: url("../img/computer.png") no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .urgent-all .right{
+        width: 100%;
+        background: #f0f3f6;
+        float: right;
+    }
+    .urgent-all .right .head{
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        background: #12b7f5;
+        color: #ffffff;
+        line-height: 30px;
+    }
+
+    .urgent-all .histogram-flow {
+        width: 450px;
+        float: left;
+        min-height: 260px;
+    }
+    .urgent-all .histogram-flow-box{
+        width: 100%;
+        height: 220px;
+        background: #ffffff;
+        float: left;
+    }
+    .urgent-all .traffic-usage-count {
+        width: 450px;
+        float: left;
+        min-height: 260px;
+    }
+    .urgent-all .flow-line-chart {
+        position: relative;
+        width: 1000px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: 11px;
+        color: #4f6072;
+        min-height: 300px;
+    }
+
+    .urgent-all .flow-line-chart .wenxin-tishi{
+        padding-left: 60px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+
+    .urgent-all .flow-timeline-qian {
+        position: relative;
+        float: left;
+        line-height: 40px;
+        clear: both;
+        width: 100%;
+    }
+    .urgent-all .flow-timeline-qian  .cucc-circle-icon {
+        width: 10px;
+        height: 10px;
+        margin-top: 15px;
+        margin-right: 30px;
+        border-radius: 5px;
+        background: #a0a0a0;
+    }
+    .urgent-all-wenxin-tishi {
+        color: #4f5f6f;
+    }
+    .urgent-all-wenxin-tishi span{
+        color: #4f5f6f;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .urgent-start-local .urgent-start-local-head{
+        width: 90%;
+        height: 60px;
+        line-height: 60px;
+        font-size: 22px;
+        color: #4f5f6f;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+    .urgent-start-local .urgent-start-local-state{
+        width: 60%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 22px;
+        color: #4f5f6f;
+        margin-left: 10%;
+    }
+    .urgent-start-local .urgent-start-local-state span{
+
+        float: right;
+    }
+    .urgent-start-local .urgent-start-local-state .red{
+        color: #ff0000;
+
+    }
+    .urgent-start-local .urgent-start-local-button{
+        width: 30%;
+        height: 40px;
+        border-radius: 10px;
+        background: #26b8f3;
+        text-align: center;
+        line-height: 40px;
+        float: right;
+        color: #ffffff;
+        margin-right: 20px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .urgent-start-another-local .one{
+        border-bottom: dashed 1px #bfbfbf;
+    }
+    .urgent-start-another-local .urgent-start-another-list{
+        height: 110px;
+        position: relative;
+    }
+    .urgent-start-another-local .urgent-start-local-head{
+        width: 90%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        color: #4f5f6f;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+    .urgent-start-another-local .urgent-start-local-state{
+        width: 40%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        color: #4f5f6f;
+        margin-left: 10%;
+    }
+    .urgent-start-another-local .urgent-start-local-state .urgent-start-local-button{
+        position: absolute;
+        width: 30%;
+        height: 30px;
+        border-radius: 6px;
+        background: #26b8f3;
+        text-align: center;
+        line-height: 30px;
+        right: 10px;
+        bottom: 20px;
+        float: right;
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .urgent-start-another-local .urgent-start-local-state span{
+        float: right;
+    }
+    .urgent-start-another-local .urgent-start-local-state .red{
+        color: #ff0000;
+
     }
 
     /*flow usecase*/
-    .traffic-usage-count {
-        padding-top: 10px;
-    }
 
     .count {
         padding-left: 30px;
@@ -1598,7 +2343,26 @@ html,body{-webkit-text-size-adjust:none;}
         height: 40px;
         background: #f0f4f7;
     }
-
+    .wenxin-tishi{
+        color: #4f5f6f;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .wenxin-tishi .wenxin-tishi-title{
+        color: #ff0000;
+        float: left;
+        width: 100px;
+    }
+    .wenxin-tishi .wenxin-tishi-title .wenxin-tishi-img{
+        width: 14px;
+        height: 14px;
+        background: url("../img/wujiaoxing.png") no-repeat center;
+        background-size: 100%;
+        float: left;
+    }
     .flow-timeline-qian {
         float: left;
         line-height: 40px;
@@ -1756,11 +2520,6 @@ html,body{-webkit-text-size-adjust:none;}
         margin-top: 4px;
     }
 
-    .flow-cucc-dingoubyhl {
-        position: absolute;
-        left: 10px;
-        color: #677480;
-    }
 
     .flow-cucc-dingoubyhr {
         position: absolute;
@@ -2064,9 +2823,37 @@ html,body{-webkit-text-size-adjust:none;}
     }
     .xq-number {
         position: relative;
-        background: #f0f4f7;
+        border-top: 1px solid #a7a8a8;
+        border-bottom: 1px solid #a7a8a8;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: #f0f3f6;
         height: 30px;
         line-height: 30px;
+    }
+    .xq-number .point{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #a0a0a0;
+        top: 10px;
+        left: 20px;
+        background-size: 100% 100%;
+    }
+    .xq-number select{
+        width: 60px;
+        height: 20px;
+        position: absolute;
+        left: 180px;
+        top: 5px;
+        border: 1px solid #aaaaaa;
+        border-radius: 4px;
+        background: #ffffff;
+    }
+    .detail-table{
+        text-align: center;
+        height: 100px !important;
     }
 
     .flow-bg-user {

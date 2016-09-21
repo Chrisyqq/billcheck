@@ -36,7 +36,13 @@
         </div>
         <div class="histogram-flow-box">
             <div class="histogram-flow-box-head">
-                <div class="person-name">尊敬的白**,您好!</div>
+                <div class="person-name">
+                    <div class="star">
+                        <div class="person-star-box light"></div>
+                        <div><span>5</span>星</div>
+                    </div>
+                    尊敬的白**,您好!
+                </div>
                 <div class="person-vip">您是我公司尊贵的<span>五</span>星用户</div>
                 <div class="person-star">
                     <div class="person-star-box light"></div>
@@ -50,16 +56,16 @@
             <div class="histogram-flow-box-zhanghao">
                 <div class="phone-number">
                     <div class="phone"></div>
-                    <div class="number">153****1111<span>[切换]</span></div>
+                    <div class="number">153****1111<span>[切换]</span><button>我要开机</button></div>
                 </div>
-                <div class="phone-number-state">账户欠费:<span>8.00元</span><button>充值</button></div>
-                <div class="phone-number-state">当前号码状态:<span>停机</span><button>我要开机</button></div>
+                <div class="phone-number-state qianfei">账户欠费:<span>8.00元</span><button>充值</button></div>
+                <div class="phone-number-state tinji">当前号码状态:<span>停机</span><button>我要开机</button></div>
             </div>
         </div>
     </div>
 
     <div class="row traffic-usage-count" id="timouth">
-        <div class="row traffic-usage">
+        <div class="traffic-usage">
             <div class="traffic-usage-qian">
                 <div class="cucc-circle">
                     <div class="cucc-circle-icon"></div>
@@ -67,10 +73,10 @@
                 <span>近6个月的消费趋势</span>
                 <div class="traffic-usage-handle" id="chutiyan"><img src=""><a id="flow-banli">详单</a></div>
             </div>
-            <div class="traffic-usage-count-box">
-                <div class="phone-fee">
+        </div>
+        <div class="traffic-usage-count-box">
+            <div class="phone-fee">
 
-                </div>
             </div>
         </div>
     </div>
@@ -83,6 +89,15 @@
             <span>温馨提示</span>
             <div class="traffic-usage-handle"><a href="#"></a></div>
         </div>
+    </div>
+    <div class="row wenxin-tishi">
+        <div class="wenxin-tishi-title">
+            <div class="wenxin-tishi-img"></div>
+            星级权益:
+        </div>
+        “手机开机”显示温馨提醒“欢迎您使用紧急复机服务！5-7星客户可享受此权益。尊敬的客户，您名下任一手机号码处于停机状态且暂时不方便交费时，单停14天内或双停后7天内，可申请手机紧急授信开机48小时。您名下所有移动号码均可享受该权益，每号码每月一次。”；宽带开机显示温馨提醒“欢迎您使用紧急复机服务！3-7星客户可享受此权益。尊敬的客户，您名下宽带处于欠费停机，自停机日开始后7天内（自然日），可申请宽带紧急开机7天（自然日）。您名下所有宽带号码均可享受该权益，每号码每月一次。紧急复机期间产生的费用计入下一账期，按照协议资费标准正常计费，且
+        复机时间不影响协议时长，若紧急开机后仍未交
+        清欠费，下月起将无法再享受本权益。”
     </div>
 
     <div class="row flow-line-chart">
@@ -120,11 +135,11 @@
                 <table class="table table-bordered">
                     <thead>
                     <tr>
-                        <th>起始时间</th>
-                        <th>上网时长</th>
-                        <th>使用流量（KB）</th>
-                        <th>地点</th>
-                        <th>地点</th>
+                        <th>号码</th>
+                        <th>国际流量费</th>
+                        <th>国际漫游语音费用</th>
+                        <th>国际漫游短信费用</th>
+                        <th>合计</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -168,11 +183,11 @@
                 <table class="table table-bordered">
                     <thead>
                     <tr>
-                        <th>起始时间</th>
-                        <th>上网时长</th>
-                        <th>使用流量（KB）</th>
-                        <th>地点</th>
-                        <th>地点</th>
+                        <th>号码</th>
+                        <th>国际流量费</th>
+                        <th>国际漫游语音费用</th>
+                        <th>国际漫游短信费用</th>
+                        <th>合计</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -216,11 +231,11 @@
                 <table class="table table-bordered">
                     <thead>
                     <tr>
-                        <th>起始时间</th>
-                        <th>上网时长</th>
-                        <th>使用流量（KB）</th>
-                        <th>地点</th>
-                        <th>地点</th>
+                        <th>号码</th>
+                        <th>国际流量费</th>
+                        <th>国际漫游语音费用</th>
+                        <th>国际漫游短信费用</th>
+                        <th>合计</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -255,97 +270,136 @@
         </div>
     </div>
     <!--flow banli-->
-    <div class="flow-cucc-dingou" style="display: block;" id="flow-dingou">
+    <div class="flow-cucc-dingou" style="display: none;" id="flow-dingou">
         <div class="flow-cucc-dingoutitle">
-            流量包办理<i class="fa fa-times" id="over-dingou"></i>
+            充值缴费<i class="fa fa-times alert-close" id=""></i>
+            <div class="close"></div>
         </div>
         <div class="flow-cucc-dingoubaoyue">
             <div class="flow-cucc-dingoubyhead">
-                <div class="flow-cucc-dingoubyhl"><i class="fa fa-circle"></i> 包月流量包</div>
-                <div class="flow-cucc-dingoubyhr" id="go-whatmouth"><i class="fa fa-circle"></i>什么是包月包</div>
+                <div class="flow-cucc-dingoubyhl">
+                    充值金额
+                </div>
             </div>
 
             <div class="form-group flow-form-group" id="positionGroup">
                 <div class="radio">
                     <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">100M/10元
+                        <input type="radio" name="positions" value="toast-bottom-center">10元
                     </label>
                     <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">300M/20元
+                        <input type="radio" name="positions" value="toast-bottom-center">20元
                     </label>
                     <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">500M/30元
+                        <input type="radio" name="positions" value="toast-bottom-center">30元
                     </label>
                     <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">1G/50元
+                        <input type="radio" name="positions" value="toast-bottom-center">50元
                     </label>
                     <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">2G/70元
+                        <input type="radio" name="positions" value="toast-bottom-center">100元
                     </label>
                     <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">3G/100元
+                        <input type="radio" name="positions" value="toast-bottom-center">300元
                     </label>
                 </div>
             </div>
 
             <!-- /input-group -->
         </div>
-        <div class="flow-cucc-dingoubaoyue">
+        <div class="flow-cucc-dingoubaoyue" >
             <div class="flow-cucc-dingoubyhead">
-                <div class="flow-cucc-dingoubyhl"><i class="fa fa-circle"></i> 包月流量包</div>
-                <div class="flow-cucc-dingoubyhr" id="go-whatadd"><i class="fa fa-circle"></i>什么是加餐包</div>
+                <div class="flow-cucc-dingoubyhl">充值方式</div>
             </div>
-            <div class="form-group flow-form-group" id="">
+            <div class="form-group flow-form-group">
                 <div class="radio">
-                    <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">100M/10元
+                    <label class="recharge">
+                        <input type="radio" name="positions" value="toast-bottom-center">
+                        <div class="zhifubao-img"></div>
+                        支付宝
                     </label>
-                    <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">300M/20元
+                    <label class="recharge">
+                        <input type="radio" name="positions" value="toast-bottom-center">
+                        <div class="weixin-img"></div>
+                        微信
                     </label>
-                    <label>
-                        <input type="radio" name="positions" value="toast-bottom-center">500M/30元
-                    </label>
+                </div>
+            </div>
+            <div class="flow-cucc-dingoujian">
+                <button type="button" class="btn btn-info" id="">确认订购</button>
+            </div>
+        </div>
+    </div>
+    <div class="flow-cucc-mmyz flow-cucc-alert" style="display: none">
+        <div class="flow-cucc-dingoutitle">
+            详单随机码验证<i class="fa fa-times alert-close"></i>
+            <div class="close"></div>
+        </div>
+        <div class="select-serve-random-all">
+            <div class="select-serve-random">
+                <div class="internet active">服务密码</div>
+                <div class="voice">随机密码</div>
+                <div class="message">随机密码</div>
+            </div>
+        </div>
+        <div class="flow-cucc-dingoubaoyue" id="servePassword">
+            <p>忘记服务密码，可以本机拨打10001-5或编辑短信551发送到10001查询您的服务密码。</p>
+            <div class="form-group sjmyz-srk">
+                <input class="form-control sjmyz-inputtwo">
+                <button class="form-control sjmyz-inputthree">获取验证码</button>
+            </div>
+        </div>
+        <div class="flow-cucc-dingoubaoyue" style="display: none" id="suijiPassword">
+            <div class="form-group mmyz-srk">
+                <label>随机码：</label>
+                <input class="form-control mmyz-inputtwo" id="">
+                <button class="form-control mmyz-inputthree"><span>50</span>s</button>
+            </div>
+            <p class="mmyz-alert">已发送随机码到您的手机，请注意查收！</p>
+        </div>
+        <div class="flow-cucc-dingoujian">
+            <button type="button" class="btn btn-info" id="">点击查询</button>
+        </div>
+    </div>
 
+    <div class="flow-cucc-mmyz flow-cucc-alert" style="display: none">
+        <div class="flow-cucc-dingoutitle">
+            <div class="user">
+                <div class="user-img"></div>
+                177****5301
+            </div>
+            密码验证<i class="fa fa-times alert-close" id=""></i>
+            <div class="close"></div>
+        </div>
+        <div class="select-serve-password">
+            <div class="serve active">服务密码</div>
+            <div class="random">随机密码</div>
+        </div>
+        <div class="flow-cucc-dingoubaoyue" id="servePassword">
+            <p>忘记服务密码，可以本机拨打10001-5或编辑短信551发送到10001查询您的服务密码。</p>
+            <div class="form-group sjmyz-srk">
+                <div class="form-group mmyz-srk">
+                    <label>服务密码：</label>
+                    <input class="form-control mmyz-inputtwo" id="">
+                    <button class="form-control mmyz-inputthree"><span>50</span>s</button>
                 </div>
             </div>
         </div>
+        <div class="flow-cucc-dingoubaoyue" style="display: none" id="suijiPassword">
+            <div class="form-group mmyz-srk">
+                <label>随机码：</label>
+                <input class="form-control mmyz-inputtwo">
+                <button class="form-control mmyz-inputthree"><span>50</span>s</button>
+            </div>
+            <p class="mmyz-alert">已发送随机码到您的手机，请注意查收！</p>
+        </div>
         <div class="flow-cucc-dingoujian">
-            <p>温馨提醒：新订购流量包无法抵消订购前产生的流量</p>
-            <button type="button" class="btn btn-info" id="go-dingouover">确认订购</button>
-        </div>
-    </div>
-    <div class="flow-cucc-whatmouth" style="display: none" id="flow-whatmouth">
-        <div class="flow-cucc-whatmouthtitle">
-            流量包办理<i class="fa fa-mail-reply" id="backone-dingou"></i>
-        </div>
-
-        <div class="flow-cucc-whatmouthneirong"></div>
-    </div>
-
-    <div class="flow-cucc-whatadd" style="display: none" id="flow-whatadd">
-        <div class="flow-cucc-whataddtitle">
-            流量包办理<i class="fa fa-mail-reply" id="backtwo-dingou"></i>
-        </div>
-
-        <div class="flow-cucc-whataddneirong"></div>
-    </div>
-
-    <div class="flow-cucc-dingou" style="display: none;" id="flow-dingouover">
-        <div class="flow-cucc-dingoutitle">
-            流量包办理<i class="fa fa-times" id="success-dingou"></i>
-        </div>
-        <div class="flow-cucc-succesdingou">
-            <i class="fa fa-check"></i>
-            <p class="flow-cucc-succesdingouqian">您的订购请求已提交</p>
-            <p class="flow-cucc-succesdingouhou">注：能否成功办理请已收到短信为准哦</p>
+            <button type="button" class="btn btn-info" id="">点击查询</button>
         </div>
     </div>
 </div>
 </body>
 <script>
-    (function () {
 
-    })();
 </script>
 </html>

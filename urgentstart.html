@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flowindex.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flowindex.js"></script>
+    <title>账单诊断</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="row m-flow-head">
+        <p>账单诊断</p>
+    </div>
+
+    <div class="row flow-search urgent-flow-search">
+        <form>
+            <div class="input-group  flow-search-cnumber">
+                <input type="text" class="form-control form-control-cucc" id="flow-search-number" value="">
+                <span class="input-group-btn"><button type="button" class="btn btn-primary btn-primary-cucc">查询</button></span>
+            </div>
+        </form>
+    </div>
+    <div class="row urgent-all">
+        <div class="left">
+            <div class="start-flow">
+                <div class="phone-img"></div>
+                <span>手机开机</span>
+            </div>
+            <div class="start-flow">
+                <div class="computer-img"></div>
+                <span>电脑开机</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="head">您是尊贵的5星客户,可享受紧急开机服务</div>
+            <div class="histogram-flow">
+                <div class="row traffic-usage">
+                    <div class="traffic-usage-qian">
+                        <div class="cucc-circle">
+                            <div class="cucc-circle-icon"></div>
+                        </div>
+                        <span>本机开机</span>
+                    </div>
+                </div>
+                <div class="histogram-flow-box urgent-start-local">
+                    <div class="urgent-start-local-head">
+                        您的号码状态：
+                    </div>
+                    <div class="urgent-start-local-state">
+                        当月剩余复机次数:
+                        <span>1次</span>
+                    </div>
+                    <div class="urgent-start-local-state">
+                        当前状态:
+                        <span class="red">停机</span>
+
+                    </div>
+                    <div class="urgent-start-local-button">
+                        紧急开机
+                    </div>
+                </div>
+            </div>
+
+            <div class="row traffic-usage-count urgent-start-another">
+                <div class="traffic-usage">
+                    <div class="traffic-usage-qian">
+                        <div class="cucc-circle">
+                            <div class="cucc-circle-icon"></div>
+                        </div>
+                        <span>为其他号码开机</span>
+                        <div class="traffic-usage-handle" id="chutiyan"><img src=""><a id="flow-banli">详单</a></div>
+                    </div>
+                </div>
+                <div class="traffic-usage-count-box">
+                    <div class="histogram-flow-box urgent-start-another-local">
+                        <div class="urgent-start-another-list one">
+                            <div class="urgent-start-local-head">
+                                您的号码状态：
+                            </div>
+                            <div class="urgent-start-local-state">
+                                当月剩余复机次数:
+                                <span>1次</span>
+                            </div>
+                            <div class="urgent-start-local-state">
+                                当前状态:
+                                <span class="red">停机</span>
+                                <div class="urgent-start-local-button">
+                                    紧急开机
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="urgent-start-another-list">
+                            <div class="urgent-start-local-head">
+                                您的号码状态：
+                            </div>
+                            <div class="urgent-start-local-state">
+                                当月剩余复机次数:
+                                <span>1次</span>
+                            </div>
+                            <div class="urgent-start-local-state">
+                                当前状态:
+                                <span class="red">停机</span>
+                                <div class="urgent-start-local-button">
+                                    紧急开机
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+
+            <div class="flow-timeline-qian urgent-all-wenxin-tishi">
+                <div class="cucc-circle">
+                    <div class="cucc-circle-icon"></div>
+                </div>
+                <span>温馨提示</span>
+                <div class="traffic-usage-handle"><a href="#"></a></div>
+            </div>
+            <div class="row flow-line-chart">
+
+                <div class="row wenxin-tishi">
+                    <div class="wenxin-tishi-title">
+                        <div class="wenxin-tishi-img"></div>
+                        星级权益:
+                    </div>
+                    “手机开机”显示温馨提醒“欢迎您使用紧急复机服务！5-7星客户可享受此权益。尊敬的客户，您名下任一手机号码处于停机状态且暂时不方便交费时，单停14天内或双停后7天内，可申请手机紧急授信开机48小时。您名下所有移动号码均可享受该权益，每号码每月一次。”；宽带开机显示温馨提醒“欢迎您使用紧急复机服务！3-7星客户可享受此权益。尊敬的客户，您名下宽带处于欠费停机，自停机日开始后7天内（自然日），可申请宽带紧急开机7天（自然日）。您名下所有宽带号码均可享受该权益，每号码每月一次。紧急复机期间产生的费用计入下一账期，按照协议资费标准正常计费，且
+                    复机时间不影响协议时长，若紧急开机后仍未交
+                    清欠费，下月起将无法再享受本权益。”
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+<script>
+
+</script>
+</html>

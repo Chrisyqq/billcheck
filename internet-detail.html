@@ -5,39 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/flowindex.css" rel="stylesheet">
-    <script src="js/bootstrap.js"></script>
     <script src="js/jquery.min.js"></script>
-
-    <script src="js/layer/laydate/laydate.js"></script>
     <script src="js/flowindex.js"></script>
-
     <title>流量诊断</title>
 </head>
 <body>
-<div class="container bg-container">
-    <div class="row xq-head">
-        <a href="m-Flow-details.html">
+<div class="container">
+
+    <div class="row m-flow-head">
+        <a href="flowdetails">
             <div class="flow-bg-back"></div>
         </a>
-        上网详情
+        <p>流量诊断</p>
     </div>
-    <div class="row xq-riqi">
-        <label class="">选择查询日期：</label>
-        <input class="form-control flow-form-control layer-date" placeholder="年 月 日"
-               onclick="laydate({istime: true, format: 'YYYY-MM-DD'})">
+    <div class="row flow-search  internet-detail-flow-search">
+        <form>
+            <div class="input-group  flow-search-cnumber">
+                <input type="text" class="form-control form-control-cucc" id="flow-search-number" value="">
+                <span class="input-group-btn"><button type="button" class="btn btn-primary btn-primary-cucc">查询</button></span>
+            </div>
+        </form>
     </div>
+
     <div class="row xq-number">
-        <div class="flow-bg-user"></div>
-        <span class="xq-numberleft">13777868324</span>
-        <span class="xq-numberright">1GB=1024MB,1MB=1024Kb</span>
+        <div class="point"></div>
+        <span class="xq-numberleft">选择查询日期</span>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
     </div>
     <table class="table table-bordered">
-        <thead>
+        <thead class="detail-table" style="background: #e7e7e9; height: 100px">
         <tr>
             <th>起始时间</th>
-            <th>上网时长</th>
-            <th>使用流量（KB）</th>
+            <th>通话时间</th>
             <th>地点</th>
+            <th>通话类型</th>
             <th>费用</th>
         </tr>
         </thead>
@@ -92,7 +98,29 @@
         尊敬的用户，您可按日查询单日流量详单，最多可查询历史6个月的数据。流量详单数据仅供参考使用。如有疑问，请联系在线客服。
     </div>
 </div>
-
 </body>
-
+<script>
+    (function () {
+        $('.select-serve-password .serve').click(function () {
+            if($(this).hasClass('active')){
+                $('#suiji').css('display','block')
+            }else{
+                $('.select-serve-password .random').removeClass('active');
+                $('.select-serve-password .serve').addClass('active');
+                $('#servePassword').css('display','block');
+                $('#suijiPassword').css('display','none')
+            }
+        });
+        $('.select-serve-password .random').click(function () {
+            if($(this).hasClass('active')){
+                $('#suijiPassword').css('display','block')
+            }else{
+                $('.select-serve-password .random').addClass('active');
+                $('.select-serve-password .serve').removeClass('active');
+                $('#servePassword').css('display','none');
+                $('#suijiPassword').css('display','block');
+            }
+        })
+    })();
+</script>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flowindex.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flowindex.js"></script>
+    <title>流量诊断</title>
+</head>
+<body>
+<div class="container account-detail">
+
+    <div class="row m-flow-head">
+        <a href="flowdetails">
+            <div class="flow-bg-back"></div>
+        </a>
+        <p>流量诊断</p>
+    </div>
+    <div class="row flow-search  internet-detail-flow-search">
+        <form>
+            <div class="input-group  flow-search-cnumber">
+                <input type="text" class="form-control form-control-cucc" id="flow-search-number" value="">
+                <span class="input-group-btn"><button type="button" class="btn btn-primary btn-primary-cucc">查询</button></span>
+            </div>
+        </form>
+    </div>
+
+    <div class="account-detail-biaoge">
+        <div class="account-detail-list">
+            <div class="account-detail-list-head">账目范围</div>
+            <div class="account-detail-list-big">
+                专款专用账本1
+            </div>
+            <div class="account-detail-list-small">
+                专款专用账本2
+            </div>
+            <div class="account-detail-list-small">
+                专款专用账本3
+            </div>
+        </div>
+        <div class="account-detail-list">
+            <div class="account-detail-list-head">帐本名称</div>
+            <div class="account-detail-list-big">
+                专用通信费余额
+            </div>
+            <div class="account-detail-list-small">
+                国内语音通话费余额
+            </div>
+            <div class="account-detail-list-small">
+                电信网内语音通话费余额
+            </div>
+        </div>
+        <div class="account-detail-list">
+            <div class="account-detail-list-head">抵扣范围</div>
+            <div class="account-detail-list-big">
+                通信费（不含国际、港澳台、信息费、代收费、数据业务费和网元租用费）
+            </div>
+            <div class="account-detail-list-small">
+                国内语音通话费，不含国际、港澳台
+            </div>
+            <div class="account-detail-list-small">
+                电信网内国内语音通话费，不含港澳台
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script>
+    (function () {
+        $('.select-serve-password .serve').click(function () {
+            if($(this).hasClass('active')){
+                $('#suiji').css('display','block')
+            }else{
+                $('.select-serve-password .random').removeClass('active');
+                $('.select-serve-password .serve').addClass('active');
+                $('#servePassword').css('display','block');
+                $('#suijiPassword').css('display','none')
+            }
+        });
+        $('.select-serve-password .random').click(function () {
+            if($(this).hasClass('active')){
+                $('#suijiPassword').css('display','block')
+            }else{
+                $('.select-serve-password .random').addClass('active');
+                $('.select-serve-password .serve').removeClass('active');
+                $('#servePassword').css('display','none');
+                $('#suijiPassword').css('display','block');
+            }
+        })
+    })();
+</script>
+</html>

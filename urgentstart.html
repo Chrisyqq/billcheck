@@ -6,7 +6,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/flowindex.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
-    <script src="js/flowindex.js"></script>
+
     <title>账单诊断</title>
 </head>
 <body>
@@ -21,6 +21,7 @@
             <div class="input-group  flow-search-cnumber">
                 <input type="text" class="form-control form-control-cucc" id="flow-search-number" value="">
                 <span class="input-group-btn"><button type="button" class="btn btn-primary btn-primary-cucc">查询</button></span>
+                <div class="search-xiala"></div>
             </div>
         </form>
     </div>
@@ -37,6 +38,7 @@
         </div>
         <div class="right">
             <div class="head">您是尊贵的5星客户,可享受紧急开机服务</div>
+            <div style="clear: both"></div>
             <div class="histogram-flow">
                 <div class="row traffic-usage">
                     <div class="traffic-usage-qian">
@@ -65,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="row traffic-usage-count urgent-start-another">
+            <div class="traffic-usage-count urgent-start-another">
                 <div class="traffic-usage">
                     <div class="traffic-usage-qian">
                         <div class="cucc-circle">
@@ -77,9 +79,12 @@
                 </div>
                 <div class="traffic-usage-count-box">
                     <div class="histogram-flow-box urgent-start-another-local">
-                        <div class="urgent-start-another-list one">
+                        <div class="urgent-start-another-list one active">
                             <div class="urgent-start-local-head">
-                                您的号码状态：
+                                <div class="urgent-start-local-head-circle">
+                                    <div class="inset-circle"></div>
+                                </div>
+                                189********：
                             </div>
                             <div class="urgent-start-local-state">
                                 当月剩余复机次数:
@@ -96,7 +101,10 @@
                         </div>
                         <div class="urgent-start-another-list">
                             <div class="urgent-start-local-head">
-                                您的号码状态：
+                                <div class="urgent-start-local-head-circle">
+                                    <div class="inset-circle"></div>
+                                </div>
+                                189********：
                             </div>
                             <div class="urgent-start-local-state">
                                 当月剩余复机次数:
@@ -109,7 +117,6 @@
                                     紧急开机
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
@@ -141,8 +148,7 @@
     </div>
 
 </div>
-</body>
-<script>
 
-</script>
+</body>
+<script src="js/flowindex.js"></script>
 </html>

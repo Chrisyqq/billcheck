@@ -30,7 +30,17 @@ html,body{-webkit-text-size-adjust:none;}
     .form-control-cucc {
         height: 30px;
     }
-
+    .search-xiala{
+        width: 299px;
+        min-height: 30px;
+        background: #ffffff;
+        position: absolute;
+        top: 30px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        display: none;
+        left: 1px;
+    }
     .btn-primary-cucc {
         background: #13b7f6;
         border: 0px;
@@ -312,6 +322,72 @@ html,body{-webkit-text-size-adjust:none;}
         float: left;
         min-height: 220px;
     }
+    /* phone-fee-histogram */
+    .phone-fee{
+        width: 640px;
+        height: 200px;
+        margin: 10px auto 0 auto;
+    }
+    .phone-fee .phone-fee-top{
+        width: 590px;
+        height: 160px;
+        margin: 20px auto 0 auto;
+        border-bottom: 1px solid #12b7f5;
+    }
+    .phone-fee .phone-fee-mouth{
+        width: 40px;
+        height: 160px;
+        float: left;
+        margin-left: 70px;
+
+        position: relative;
+        color: #7a909f;
+    }
+    .phone-fee .phone-fee-mouth .more{
+        background: #ff1e3e;
+        position: absolute;
+        bottom: 0;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        width: 40px;
+    }
+    .phone-fee .phone-fee-mouth .level{
+        display: none;
+        background: #12b7f5;
+        position: absolute;
+        bottom: 0;
+        width: 40px;
+        height: 60px;
+    }
+    .phone-fee .phone-fee-mouth .phone-fee-money{
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px;
+        position: absolute;
+        top: -34px;
+        left: -40px;
+    }
+    .phone-fee .phone-fee-mouth .mouth-number{
+        width: 60px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        position: absolute;
+        bottom: -36px;
+        font-weight: bold;
+        left: -10px;
+    }
+    .phone-fee .mouth-one{
+        margin-left: 0 !important;
+    }
+    .phone-fee .phone-fee-bottom{
+        width: 640px;
+        height: 40px;
+    }
+
     .urgent-start-another .traffic-usage-count-box{
         width: 500px;
     }
@@ -645,6 +721,34 @@ html,body{-webkit-text-size-adjust:none;}
         color: #4f5f6f;
         font-weight: bold;
         margin-left: 5%;
+        position: relative;
+    }
+    .urgent-start-another-local .urgent-start-local-head .urgent-start-local-head-circle{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -16px;
+        top: 9px;
+        border-radius: 50%;
+        border: 1px solid #ff9600;
+    }
+
+    .active .urgent-start-local-head .urgent-start-local-head-circle .inset-circle{
+        width: 6px;
+        height: 6px;
+        margin: 1px auto 0 auto;
+        border-radius: 50%;
+        background: #ff9600;
+    }
+
+    .urgent-start-another-local .urgent-start-local-state{
+        width: 60%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #4f5f6f;
+        margin-left: 10%;
+
     }
     .urgent-start-another-local .urgent-start-local-state{
         width: 40%;
@@ -674,6 +778,10 @@ html,body{-webkit-text-size-adjust:none;}
     .urgent-start-another-local .urgent-start-local-state .red{
         color: #ff0000;
 
+    }
+    .urgent-all .wenxin-tishi-img{
+        margin-top: 12px;
+        margin-left: 12px;
     }
 
     /*flow-line-chart*/
@@ -1762,6 +1870,7 @@ html,body{-webkit-text-size-adjust:none;}
     .flow-search-cnumber {
         margin: 10px auto 0 auto;
         height: 40px;
+        position: relative;
         border-bottom-right-radius: 0px;
         border-top-right-radius: 0px;
         border-right: 0px;
@@ -1770,7 +1879,6 @@ html,body{-webkit-text-size-adjust:none;}
     .form-control-cucc {
         height: 40px;
     }
-
     .btn-primary-cucc {
         background: #13b7f6;
         border: 0px;
@@ -1778,7 +1886,6 @@ html,body{-webkit-text-size-adjust:none;}
         width: 80px;
         color: #ffffff;
     }
-
     .traffic-usage {
         border-bottom: 1px solid #a7a8aa;
         border-top: 1px solid #a7a8aa;
@@ -2058,8 +2165,27 @@ html,body{-webkit-text-size-adjust:none;}
         display: none;
     }
     .urgent-all{
-        height: 680px;
         background: #ffffff;
+    }
+    .urgent-all .right .histogram-flow .traffic-usage{
+        display: block;
+        float: left;
+        margin-left: 0;
+        border-bottom: 1px solid #a7a8aa;
+        border-top: none;
+        background: #ffffff;
+        padding-left: 20px;
+        font-weight: bold;
+    }
+    .urgent-all .right .urgent-start-another .traffic-usage{
+        display: block;
+        float: left;
+        margin-left: 0;
+        border-bottom: 1px solid #a7a8aa;
+        border-top: none;
+        background: #ffffff;
+        padding-left: 20px;
+        font-weight: bold;
     }
     .urgent-all .left{
         width: 100%;
@@ -2087,7 +2213,8 @@ html,body{-webkit-text-size-adjust:none;}
         height: 15px;
         float: left;
         margin-left: 30%;
-        margin-top: 6px;
+        margin-top: 8px;
+        margin-right: 6px;
         background: url("../img/phone.png") no-repeat center;
         background-size: 100% 100%;
     }
@@ -2096,7 +2223,8 @@ html,body{-webkit-text-size-adjust:none;}
         height: 15px;
         float: left;
         margin-left: 30%;
-        margin-top: 6px;
+        margin-top: 8px;
+        margin-right: 6px;
         background: url("../img/computer.png") no-repeat center;
         background-size: 100% 100%;
     }
@@ -2117,35 +2245,29 @@ html,body{-webkit-text-size-adjust:none;}
     }
 
     .urgent-all .histogram-flow {
-        width: 450px;
+        width: 100%;
         float: left;
-        min-height: 260px;
+        height: 140px;
     }
     .urgent-all .histogram-flow-box{
         width: 100%;
-        height: 220px;
+        height: 100px;
         background: #ffffff;
         float: left;
     }
     .urgent-all .traffic-usage-count {
-        width: 450px;
+        width: 100%;
         float: left;
         min-height: 260px;
     }
     .urgent-all .flow-line-chart {
-        position: relative;
-        width: 1000px;
-        margin-top: 20px;
-        margin-bottom: 100px;
-        margin-left: 11px;
-        color: #4f6072;
-        min-height: 300px;
+        display: none;
     }
 
     .urgent-all .flow-line-chart .wenxin-tishi{
         padding-left: 60px;
         line-height: 40px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
 
@@ -2166,28 +2288,33 @@ html,body{-webkit-text-size-adjust:none;}
     }
     .urgent-all-wenxin-tishi {
         color: #4f5f6f;
+        display: none;
+    }
+    .urgent-start-local{
+        border-bottom: 1px #878787 solid;
+        position: relative;
     }
     .urgent-all-wenxin-tishi span{
         color: #4f5f6f;
-        font-size: 18px;
+        font-size: 14px;
         margin-left: 15px;
     }
     .urgent-start-local .urgent-start-local-head{
         width: 90%;
-        height: 60px;
-        line-height: 60px;
-        font-size: 22px;
+        margin-left: 15px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
         color: #4f5f6f;
         font-weight: bold;
-        margin-left: 5%;
     }
     .urgent-start-local .urgent-start-local-state{
         width: 60%;
         height: 30px;
         line-height: 30px;
-        font-size: 22px;
+        font-size: 14px;
         color: #4f5f6f;
-        margin-left: 10%;
+        margin-left: 30px;
     }
     .urgent-start-local .urgent-start-local-state span{
 
@@ -2195,20 +2322,20 @@ html,body{-webkit-text-size-adjust:none;}
     }
     .urgent-start-local .urgent-start-local-state .red{
         color: #ff0000;
-
     }
     .urgent-start-local .urgent-start-local-button{
-        width: 30%;
-        height: 40px;
-        border-radius: 10px;
+        width: 60px;;
+        height: 30px;
+        border-radius: 6px;
+        position: absolute;
+        right: 10px;
+        top: 60px;
         background: #26b8f3;
         text-align: center;
-        line-height: 40px;
+        line-height: 30px;
         float: right;
         color: #ffffff;
-        margin-right: 20px;
-        font-size: 20px;
-        margin-top: 20px;
+        font-size: 12px;
     }
     .urgent-start-another-local .one{
         border-bottom: dashed 1px #bfbfbf;
@@ -2216,27 +2343,49 @@ html,body{-webkit-text-size-adjust:none;}
     .urgent-start-another-local .urgent-start-another-list{
         height: 110px;
         position: relative;
+        background: #ffffff;
+        border-bottom: solid 1px #bfbfbf;
     }
     .urgent-start-another-local .urgent-start-local-head{
         width: 90%;
         height: 30px;
         line-height: 30px;
-        font-size: 16px;
+        font-size: 14px;
         color: #4f5f6f;
         font-weight: bold;
-        margin-left: 5%;
+        position: relative;
+        margin-left: 10%;
     }
+    .urgent-start-another-local .urgent-start-local-head .urgent-start-local-head-circle{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -16px;
+        top: 9px;
+        border-radius: 50%;
+        border: 1px solid #ff9600;
+    }
+
+    .active .urgent-start-local-head .urgent-start-local-head-circle .inset-circle{
+        width: 6px;
+        height: 6px;
+        margin: 1px auto 0 auto;
+        border-radius: 50%;
+        background: #ff9600;
+    }
+
     .urgent-start-another-local .urgent-start-local-state{
-        width: 40%;
+        width: 60%;
         height: 30px;
         line-height: 30px;
-        font-size: 16px;
+        font-size: 14px;
         color: #4f5f6f;
         margin-left: 10%;
+
     }
     .urgent-start-another-local .urgent-start-local-state .urgent-start-local-button{
         position: absolute;
-        width: 30%;
+        width: 60px;
         height: 30px;
         border-radius: 6px;
         background: #26b8f3;
@@ -2246,7 +2395,7 @@ html,body{-webkit-text-size-adjust:none;}
         bottom: 20px;
         float: right;
         color: #ffffff;
-        font-size: 16px;
+        font-size: 12px;
     }
     .urgent-start-another-local .urgent-start-local-state span{
         float: right;
@@ -2256,6 +2405,9 @@ html,body{-webkit-text-size-adjust:none;}
 
     }
 
+    .urgent-all .cucc-circle {
+        display: none;
+    }
     /*flow usecase*/
 
     .count {

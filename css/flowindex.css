@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-size: 100%;
 }
+
 html,body{-webkit-text-size-adjust:none;}
 @media screen and (min-width: 1170px) {
     .m-flow-head {
@@ -13,6 +14,7 @@ html,body{-webkit-text-size-adjust:none;}
         box-shadow: 0px 0px 10px #dddddd;
         background: #f0f4f7;
         margin-top: 30px;
+        min-height: 730px;
     }
 
     .flow-search {
@@ -33,6 +35,8 @@ html,body{-webkit-text-size-adjust:none;}
     .search-xiala{
         width: 299px;
         min-height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
         background: #ffffff;
         position: absolute;
         top: 30px;
@@ -40,6 +44,7 @@ html,body{-webkit-text-size-adjust:none;}
         border-bottom-right-radius: 4px;
         display: none;
         left: 1px;
+        z-index: 10;
     }
     .btn-primary-cucc {
         background: #13b7f6;
@@ -64,7 +69,7 @@ html,body{-webkit-text-size-adjust:none;}
 
     .traffic-usage-qian span {
         float: left;
-        font-size: 1.4em;
+        font-size: 14px;
         color: #4f5f6f;
         font-weight: 900;
     }
@@ -95,7 +100,7 @@ html,body{-webkit-text-size-adjust:none;}
     }
 
     .traffic-usage-handle {
-        font-size: 1.2em;
+        font-size: 14px;
         position: absolute;
         right: 40px;
         top: 4px;
@@ -124,7 +129,7 @@ html,body{-webkit-text-size-adjust:none;}
     }
 
     .traffic-usage-handletwo {
-        font-size: 1.2em;
+        font-size: 14px;
         position: absolute;
         right: 40px;
         top: 4px;
@@ -343,6 +348,12 @@ html,body{-webkit-text-size-adjust:none;}
         position: relative;
         color: #7a909f;
     }
+    .phone-fee-detail{
+        display: none;
+    }
+    .phone-fee .phone-fee-mouth .bubbling{
+        display: none;
+    }
     .phone-fee .phone-fee-mouth .more{
         background: #ff1e3e;
         position: absolute;
@@ -362,6 +373,7 @@ html,body{-webkit-text-size-adjust:none;}
     .phone-fee .phone-fee-mouth .phone-fee-money{
         width: 120px;
         height: 40px;
+        display: block;
         text-align: center;
         line-height: 40px;
         font-size: 16px;
@@ -387,7 +399,7 @@ html,body{-webkit-text-size-adjust:none;}
         width: 640px;
         height: 40px;
     }
-
+    /* phone-fee-histogram end*/
     .urgent-start-another .traffic-usage-count-box{
         width: 500px;
     }
@@ -1903,7 +1915,7 @@ html,body{-webkit-text-size-adjust:none;}
 
     .traffic-usage-qian span {
         float: left;
-        font-size: 1.6em;
+        font-size: 14px;
         color: #4f5f6f;
     }
 
@@ -1937,7 +1949,7 @@ html,body{-webkit-text-size-adjust:none;}
     }
 
     .traffic-usage-handle {
-        font-size: 0.875em;
+        font-size: 14px;
         float: right;
         margin-right: 10px;
         color: #10b9f2;
@@ -1958,7 +1970,7 @@ html,body{-webkit-text-size-adjust:none;}
     }
 
     .traffic-usage-handletwo {
-        font-size: 0.875em;
+        font-size: 14px;
         float: right;
         margin-right: 10px;
         color: #10b9f2;
@@ -1977,6 +1989,206 @@ html,body{-webkit-text-size-adjust:none;}
         background: url("../img/questioncirclebig.png") no-repeat center;
         background-size: 100% 100%;
     }
+
+    /* phone-fee-histogram */
+    .phone-fee{
+        width: 100%;
+        height: 200px;
+        margin: 10px auto 0 auto;
+    }
+    .phone-fee .phone-fee-top{
+        width: 80%;
+        height: 200px;
+        margin: 10px auto 0 auto;
+    }
+    .phone-fee .phone-fee-mouth{
+        width: 100%;
+        height: 26px;
+        line-height: 26px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        position: relative;
+        color: #7a909f;
+    }
+    .phone-fee .phone-fee-mouth{
+        width: 100%;
+        height: 26px;
+        line-height: 26px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        position: relative;
+        color: #7a909f;
+    }
+
+    .phone-fee .phone-fee-mouth .more{
+        background: #ff1e3e;
+        position: absolute;
+        height: 12px;
+        left: 0;
+        border-radius: 2px;
+    }
+    .phone-fee .phone-fee-mouth .level{
+        display: none;
+        background: #12b7f5;
+        position: absolute;
+        left: 0;
+        height: 12px;
+        border-radius: 2px;
+    }
+    .phone-fee .phone-fee-mouth .phone-fee-money{
+        width: 60px;
+        height: 26px;
+        display: block;
+        text-align: center;
+        line-height: 26px;
+        font-size: 12px;
+        position: absolute;
+        right: -60px;
+        top: -6px;
+    }
+    .phone-fee .phone-fee-mouth .bubbling{
+        width: 80px;
+        height: 84px;
+        display: block;
+        position: absolute;
+        background: url("../img/bubbling.png") no-repeat center;
+        background-size: 100%;
+        right: -66px;
+        top: -80px;
+        color: #4f5f6f;
+        line-height: 10px;
+        padding-top: 10px;
+        padding-left: 14px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+    .phone-fee .phone-fee-mouth .mouth-number{
+        width: 60px;
+        height: 26px;
+        text-align: left;
+        line-height: 26px;
+        font-size: 14px;
+        position: absolute;
+        top: -6px;
+        font-weight: bold;
+        left: -34px;
+    }
+    .phone-fee .phone-fee-bottom{
+        width: 90%;
+        height: 40px;
+    }
+    .phone-fee-detail{
+        display: block;
+        width: 125%;
+        padding-right: 2%;
+        padding-left: 2%;
+        margin-left: -12.5%;
+    }
+    .phone-fee-detail-actual{
+        float: left;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 6px;
+    }
+    .phone-fee-detail-actual-head{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        background: #12b7f5;
+        font-size: 14px;
+        color: #ffffff;
+        padding-left: 10px;
+    }
+    .phone-fee-detail-actual-list{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #878787;
+    }
+    .phone-fee-detail-actual-list .left{
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        margin-left: 10px;
+    }
+    .phone-fee-detail-actual-list .right{
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        float: right;
+        margin-right: 30px;
+    }
+    .phone-fee-detail .yewu-list{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        background: #f8f8f8;
+        margin-bottom: 6px;
+        float: left;
+    }
+    .phone-fee-detail .yewu-detail{
+        width: 100%;
+        min-height: 100px;
+        background: #ffffff;
+        margin-bottom: 10px;
+        float: left;
+    }
+    .yewu-detail .yewu-detail-head{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        background: #f8f8f8;
+        border-top: 1px solid #c7c8c8;
+        padding-left: 20px;
+        border-left: 1px solid #c7c8c8;
+        border-right: 1px solid #c7c8c8;
+    }
+    .yewu-detail .table{
+        margin-bottom: 0 !important;
+    }
+
+    .phone-fee-detail .yewu-tanhao{
+        width: 16px;
+        height: 16px;
+        margin-top: 7px;
+        margin-left: 5px;
+        background: url("../img/bluetan.png") no-repeat center;
+        background-size: 100%;
+        float: left;
+    }
+    .phone-fee-detail .yewu-word{
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        color: #4f5f6f;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .phone-fee-detail .down .yewu-turn{
+        width: 12px;
+        height: 12px;
+        margin-top: 10px;
+        background: url("../img/jianxia.png") no-repeat center;
+        background-size: 100%;
+        float: right;
+        margin-right: 10px;
+    }
+    .phone-fee-detail .up .yewu-turn{
+        width: 12px;
+        height: 12px;
+        margin-top: 10px;
+        background: url("../img/jianshang.png") no-repeat center;
+        background-size: 100%;
+        float: right;
+        margin-right: 10px;
+    }
+
+    /* phone-fee-histogram end*/
+
     /* account-detail */
     .account-detail{
         height: 730px;
@@ -2022,7 +2234,7 @@ html,body{-webkit-text-size-adjust:none;}
     /**/
     .histogram-flow {
         width: 100%;
-        height: 80px;
+        height: 90px;
         display: block;
 
     }
@@ -2057,7 +2269,7 @@ html,body{-webkit-text-size-adjust:none;}
         width: 14px;
         height: 14px;
         margin-right: 6px;
-        margin-top: 4px;
+        margin-top: 8px;
         float: left;
     }
     .histogram-flow-box-head .person-name .star .light{
@@ -2514,6 +2726,7 @@ html,body{-webkit-text-size-adjust:none;}
         background: url("../img/wujiaoxing.png") no-repeat center;
         background-size: 100%;
         float: left;
+        margin-top: 2px;
     }
     .flow-timeline-qian {
         float: left;
@@ -2573,6 +2786,43 @@ html,body{-webkit-text-size-adjust:none;}
         font-size: 0.875em !important;
     }
 
+    .flow-form-group label {
+        width: 31%;
+        height: 25px;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 3px;
+        margin-top: 5px;
+        color: #5ebadd;
+        font-size: 0.875em !important;
+    }
+    .flow-form-group .recharge {
+        width: 40%;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 0.875em !important;
+        color: #586776 !important;
+    }
+    .flow-form-group .recharge input{
+        float: left !important;
+    }
+    .flow-form-group .zhifubao-img {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 10px;
+        background: url("../img/zhifdubao.png") no-repeat center;
+        background-size: 100%;
+    }
+    .flow-form-group .weixin-img {
+        width: 18px;
+        height: 18px;
+        float: left;
+        background: url("../img/weixin.png") no-repeat center;
+        background-size: 100%;
+    }
+
     .flow-form-group span {
         font-size: 1.6em !important;
     }
@@ -2618,7 +2868,106 @@ html,body{-webkit-text-size-adjust:none;}
         font-size: 1.6em;
         font-weight: 900;
     }
+    .flow-cucc-dingoutitle .user{
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: #4f5f6f;
+        font-size: 12px;
+        text-align: left;
+        line-height: 20px;
+    }
+    .flow-cucc-dingoutitle .close{
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        background: url("../img/close.png") no-repeat center;
+        background-size: 100%;
+        cursor: pointer;
+    }
+    .flow-cucc-dingoutitle .user-img{
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+        float: left;
+        background: url("../img/usercircle.png") no-repeat center;
+        background-size: 100%;
+    }
 
+    .select-serve-password{
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        float: right;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .select-serve-password .active {
+
+        color: #5ebadd !important;
+        border-bottom: 1px solid #5ebadd !important;
+    }
+    .select-serve-password .serve {
+        float: left;
+        cursor: pointer;
+        width: 50%;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        color: #4f5f6f;
+        border-bottom: 1px solid #4f5f6f;
+    }
+    .select-serve-password .random{
+        width: 50%;
+        cursor: pointer;
+        height: 30px;
+        text-align: center;
+        float: left;
+        line-height: 30px;
+        color: #4f5f6f;
+        border-bottom: 1px solid #4f5f6f;
+    }
+    .select-serve-random-all{
+        width: 100%;
+        height: 30px;
+        border-bottom: #dcdfe4 solid 1px;
+    }
+    .select-serve-random{
+        width: 90%;
+        height: 30px;
+        margin-left: 5%;
+        line-height: 30px;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .select-serve-random .active{
+        color: #5caccb;
+    }
+    .select-serve-random .internet{
+        text-align: center;
+        width: 30%;
+        line-height: 30px;
+        border-right: #dcdfe4 solid 1px;
+        float: left;
+    }
+    .select-serve-random .voice{
+        width: 30%;
+        line-height: 30px;
+        float: left;
+        border-right: #dcdfe4 solid 1px;
+        text-align: center;
+    }
+    .select-serve-random .message{
+        width: 30%;
+        line-height: 30px;
+        float: left;
+        text-align: center;
+    }
     .flow-cucc-whatmouthtitle {
         width: 100%;
         height: 30px;
@@ -2705,6 +3054,8 @@ html,body{-webkit-text-size-adjust:none;}
         z-index: 9999;
     }
     .flow-cucc-mmyz .flow-cucc-dingoubaoyue{
+        width: 100%;
+        float: left;
         padding-right: 20px;
         padding-left: 20px;
         height: 110px;
@@ -2808,6 +3159,8 @@ html,body{-webkit-text-size-adjust:none;}
 
     .flow-cucc-dingoujian {
         width: 100%;
+        float: left;
+        margin-top: 15px;
         text-align: center;
     }
 

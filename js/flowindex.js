@@ -36,51 +36,82 @@ $(document).ready(function () {
         $('.mouth-five .mouth-number span').text(mouthNo[4]);
         $('.mouth-six .mouth-number span').text(mouthNo[5]);
         if(mouthNumber[0]>level){
-            var onemaxH=Math.ceil(mouthNumber[0]/maxHeight*160);
-            $('.mouth-one .more').css({'height':onemaxH,'background':'#ff1e3e'});
-            $('.mouth-one .level').css({'display':'block','height':levelHeight});
+            var onemaxH=Math.ceil(mouthNumber[0]/maxHeight*100)*1.6;
+            if(onemaxH==levelHeight){
+                $('.mouth-one .more').css({'height':onemaxH+1,'background':'#ff1e3e'});
+                $('.mouth-one .level').css({'display':'block','height':levelHeight});
+            }else{
+                $('.mouth-one .more').css({'height':onemaxH,'background':'#ff1e3e'});
+                $('.mouth-one .level').css({'display':'block','height':levelHeight});
+            }
         }else {
-            var onemaxH=Math.ceil(mouthNumber[0]/maxHeight*160);
+            var onemaxH=Math.ceil(mouthNumber[0]/maxHeight*100)*1.6;
             $('.mouth-one .more').css({'height':onemaxH,'background':'#12b7f5'});
         }
         if(mouthNumber[1]>level){
-            var onemaxH=Math.ceil(mouthNumber[1]/maxHeight*160);
-            $('.mouth-two .more').css({'height':onemaxH,'background':'#ff1e3e'});
-            $('.mouth-two .level').css({'display':'block','height':levelHeight});
+            var onemaxH=Math.ceil(mouthNumber[1]/maxHeight*100)*1.6;
+            if(onemaxH==levelHeight){
+                $('.mouth-two .more').css({'height':onemaxH+1,'background':'#ff1e3e'});
+                $('.mouth-two .level').css({'display':'block','height':levelHeight});
+            }else {
+                $('.mouth-two .more').css({'height':onemaxH+1,'background':'#ff1e3e'});
+                $('.mouth-two .level').css({'display':'block','height':levelHeight});
+            }
         }else {
-            var onemaxH=Math.ceil(mouthNumber[1]/maxHeight*160);
+            var onemaxH=Math.ceil(mouthNumber[1]/maxHeight*100)*1.6;
             $('.mouth-two .more').css({'height':onemaxH,'background':'#12b7f5'});
         }
         if(mouthNumber[2]>level){
-            var onemaxH=Math.ceil(mouthNumber[2]/maxHeight*160);
-            $('.mouth-three .more').css({'height':onemaxH,'background':'#ff1e3e'});
-            $('.mouth-three .level').css({'display':'block','height':levelHeight});
+            var onemaxH=Math.ceil(mouthNumber[2]/maxHeight*100)*1.6;
+            if(onemaxH==levelHeight){
+                $('.mouth-three .more').css({'height':onemaxH+1,'background':'#ff1e3e'});
+                $('.mouth-three .level').css({'display':'block','height':levelHeight});
+            }else {
+                $('.mouth-three .more').css({'height':onemaxH,'background':'#ff1e3e'});
+                $('.mouth-three .level').css({'display':'block','height':levelHeight});
+            }
         }else {
-            var onemaxH=Math.ceil(mouthNumber[2]/maxHeight*160);
+            var onemaxH=Math.ceil(mouthNumber[2]/maxHeight*100)*1.6;
             $('.mouth-three .more').css({'height':onemaxH,'background':'#12b7f5'});
         }
         if(mouthNumber[3]>level){
-            var onemaxH=Math.ceil(mouthNumber[3]/maxHeight*160);
-            $('.mouth-four .more').css({'height':onemaxH,'background':'#ff1e3e'});
-            $('.mouth-four .level').css({'display':'block','height':levelHeight});
+            var onemaxH=Math.ceil(mouthNumber[3]/maxHeight*100)*1.6;
+            if(onemaxH==levelHeight){
+                $('.mouth-four .more').css({'height':onemaxH+1,'background':'#ff1e3e'});
+                $('.mouth-four .level').css({'display':'block','height':levelHeight});
+            }else{
+                $('.mouth-four .more').css({'height':onemaxH,'background':'#ff1e3e'});
+                $('.mouth-four .level').css({'display':'block','height':levelHeight});
+            }
+
         }else {
-            var onemaxH=Math.ceil(mouthNumber[3]/maxHeight*160);
+            var onemaxH=Math.ceil(mouthNumber[3]/maxHeight*100)*1.6;
             $('.mouth-four .more').css({'height':onemaxH,'background':'#12b7f5'});
         }
         if(mouthNumber[4]>level){
-            var onemaxH=Math.ceil(mouthNumber[4]/maxHeight*160);
-            $('.mouth-five .more').css({'height':onemaxH,'background':'#ff1e3e'});
-            $('.mouth-five .level').css({'display':'block','height':levelHeight});
+            var onemaxH=Math.ceil(mouthNumber[4]/maxHeight*100)*1.6;
+            if(onemaxH==levelHeight){
+                $('.mouth-five .more').css({'height':onemaxH+1,'background':'#ff1e3e'});
+                $('.mouth-five .level').css({'display':'block','height':levelHeight});
+            }else {
+                $('.mouth-five .more').css({'height':onemaxH,'background':'#ff1e3e'});
+                $('.mouth-five .level').css({'display':'block','height':levelHeight});
+            }
         }else {
-            var onemaxH=Math.ceil(mouthNumber[4]/maxHeight*160);
+            var onemaxH=Math.ceil(mouthNumber[4]/maxHeight*100)*1.6;
             $('.mouth-five .more').css({'height':onemaxH,'background':'#12b7f5'});
         }
         if(mouthNumber[5]>level){
-            var onemaxH=Math.ceil(mouthNumber[5]/maxHeight*160);
-            $('.mouth-six .more').css({'height':onemaxH,'background':'#ff1e3e'});
-            $('.mouth-six .level').css({'display':'block','height':levelHeight});
+            var onemaxH=Math.ceil(mouthNumber[5]/maxHeight*100)*1.6;
+            if(onemaxH==levelHeight){
+                $('.mouth-six .more').css({'height':onemaxH+1,'background':'#ff1e3e'});
+                $('.mouth-six .level').css({'display':'block','height':levelHeight});
+            }else {
+                $('.mouth-six .more').css({'height':onemaxH,'background':'#ff1e3e'});
+                $('.mouth-six .level').css({'display':'block','height':levelHeight});
+            }
         }else {
-            var onemaxH=Math.ceil(mouthNumber[5]/maxHeight*160);
+            var onemaxH=Math.ceil(mouthNumber[5]/maxHeight*100)*1.6;
             $('.mouth-six .more').css({'height':onemaxH,'background':'#12b7f5'});
         }
     }else {
@@ -174,12 +205,15 @@ $(document).ready(function () {
         }
     });
     //search
-    $('#flow-search-number').focus(function () {
+    $('.flow-search').click(function () {
         if($('.search-xiala').css('display')=="none"){
             $('.search-xiala').css('display','block');
         }else{
-
+            
         }
+    });
+    $('.search-xiala p').click(function () {
+        alert($(this).text());
     });
     // $('#flow-search-number').blur(function () {
     //     if($('.search-xiala').css('display')=="none"){
@@ -188,8 +222,20 @@ $(document).ready(function () {
     //
     //     }
     // });
-    $('.search-xiala').click();
 
+    //bill-check-chose
+    $('#billsearch').click(function () {
+        if($('.right-bill-check').css('display')=="none"){
+            $('.right-bill-check').css('display','block');
+            $('.right-detail-bill').css('display','none')
+        }
+    });
+    $('#detailbill').click(function () {
+        if($('.right-detail-bill').css('display')=="none"){
+            $('.right-detail-bill').css('display','block');
+            $('.right-bill-check').css('display','none')
+        }
+    });
     processerbarq(6000);
     processerbarh(3000);
     //    

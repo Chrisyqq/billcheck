@@ -21,10 +21,10 @@
                 <input type="text" class="form-control form-control-cucc" id="flow-search-number" value="">
                 <span class="input-group-btn"><button type="button" class="btn btn-primary btn-primary-cucc">查询</button></span>
                 <div class="search-xiala">
-                    <p>dssdsdsdsd</p>
-                    <p>dssdsdsdsd</p>
-                    <p>dssdsdsdsd</p>
-                    <p>dssdsdsdsd</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
                 </div>
             </div>
         </form>
@@ -291,14 +291,14 @@
                 <p><span>3</span>月消费情况</p>
             </div>
             <div class="consume-situation-bill-check">
-                <div class="bill-check-head">账单查询</div>
+                <div class="bill-check-head" id="billsearch">账单查询</div>
                 <div class="bill-check-list">
                     <p>账户账单</p>
                     <p>号码账单</p>
                 </div>
             </div>
             <div class="consume-situation-head-bill-check">
-                <div class="bill-check-head">详单</div>
+                <div class="bill-check-head" id="detailbill">详单</div>
                 <div class="bill-check-list">
                     <p>语音详单</p>
                     <p>上网详单</p>
@@ -307,150 +307,155 @@
             </div>
         </div>
         <div class="right">
-            <div class="yewu-list down">
-                <div class="yewu-tanhao"></div>
-                <div class="yewu-word">您有订购的业务有点多哦！</div>
-                <div class="yewu-turn"></div>
-            </div>
+            <div class="right-bill-check">
+                <div class="yewu-list down">
+                    <div class="yewu-tanhao"></div>
+                    <div class="yewu-word">您有订购的业务有点多哦！</div>
+                    <div class="yewu-turn"></div>
+                </div>
 
-            <div class="yewu-detail" style="display: none">
-                <div class="yewu-detail-head">
-                    本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                <div class="yewu-detail" style="display: none">
+                    <div class="yewu-detail-head">
+                        本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>号码</th>
+                            <th>国际流量费</th>
+                            <th>国际漫游语音费用</th>
+                            <th>国际漫游短信费用</th>
+                            <th>合计</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>号码</th>
-                        <th>国际流量费</th>
-                        <th>国际漫游语音费用</th>
-                        <th>国际漫游短信费用</th>
-                        <th>合计</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="yewu-list down">
-                <div class="yewu-tanhao"></div>
-                <div class="yewu-word">您有订购的业务有点多哦！</div>
-                <div class="yewu-turn"></div>
-            </div>
-            <div class="yewu-detail" style="display: none">
-                <div class="yewu-detail-head">
-                    本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                <div class="yewu-list down">
+                    <div class="yewu-tanhao"></div>
+                    <div class="yewu-word">您有订购的业务有点多哦！</div>
+                    <div class="yewu-turn"></div>
                 </div>
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>号码</th>
-                        <th>国际流量费</th>
-                        <th>国际漫游语音费用</th>
-                        <th>国际漫游短信费用</th>
-                        <th>合计</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="yewu-list up">
-                <div class="yewu-tanhao"></div>
-                <div class="yewu-word">您有订购的业务有点多哦！</div>
-                <div class="yewu-turn"></div>
-            </div>
-            <div class="yewu-detail" style="display:block;">
-                <div class="yewu-detail-head">
-                    本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                <div class="yewu-detail" style="display: none">
+                    <div class="yewu-detail-head">
+                        本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>号码</th>
+                            <th>国际流量费</th>
+                            <th>国际漫游语音费用</th>
+                            <th>国际漫游短信费用</th>
+                            <th>合计</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>号码</th>
-                        <th>国际流量费</th>
-                        <th>国际漫游语音费用</th>
-                        <th>国际漫游短信费用</th>
-                        <th>合计</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <th>07:30:32</th>
-                        <th>33分54秒</th>
-                        <th>353</th>
-                        <th>杭州</th>
-                        <th>杭州</th>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="yewu-list up">
+                    <div class="yewu-tanhao"></div>
+                    <div class="yewu-word">您有订购的业务有点多哦！</div>
+                    <div class="yewu-turn"></div>
+                </div>
+                <div class="yewu-detail" style="display:block;">
+                    <div class="yewu-detail-head">
+                        本月国际漫游费用产生**元，占了总费用的*%，您可以查询<span>详单</span>了解详情。
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>号码</th>
+                            <th>国际流量费</th>
+                            <th>国际漫游语音费用</th>
+                            <th>国际漫游短信费用</th>
+                            <th>合计</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <th>07:30:32</th>
+                            <th>33分54秒</th>
+                            <th>353</th>
+                            <th>杭州</th>
+                            <th>杭州</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="right-detail-bill">
+                <iframe frameborder="0" src="internetdetails.html"></iframe>
             </div>
         </div>
     </div>
@@ -606,8 +611,9 @@
     </div>
 </div>
 </body>
-<script src="js/loading.js"></script>
+
 <script src="js/flowindex.js"></script>
+<script src="js/loading.js"></script>
 <script>
     window.onload = function () {
         progressset();

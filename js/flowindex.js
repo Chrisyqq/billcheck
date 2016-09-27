@@ -178,7 +178,7 @@ $(document).ready(function () {
         if($('.search-xiala').css('display')=="none"){
             $('.search-xiala').css('display','block');
         }else{
-            $('.search-xiala').css('display','none');
+
         }
     });
     // $('#flow-search-number').blur(function () {
@@ -188,6 +188,8 @@ $(document).ready(function () {
     //
     //     }
     // });
+    $('.search-xiala').click();
+
     processerbarq(6000);
     processerbarh(3000);
     //    

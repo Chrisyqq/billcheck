@@ -46,6 +46,10 @@ html,body{-webkit-text-size-adjust:none;}
         left: 1px;
         z-index: 10;
     }
+    .search-xiala p{
+        line-height: 20px;
+        cursor: pointer;
+    }
     .btn-primary-cucc {
         background: #13b7f6;
         border: 0px;

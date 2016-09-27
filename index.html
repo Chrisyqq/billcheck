@@ -300,9 +300,9 @@
             <div class="consume-situation-head-bill-check">
                 <div class="bill-check-head" id="detailbill">详单</div>
                 <div class="bill-check-list">
-                    <p>语音详单</p>
-                    <p>上网详单</p>
-                    <p>短信详单</p>
+                    <p id="voicedetail">语音详单</p>
+                    <p id="internetdetail">上网详单</p>
+                    <p id="messagedetail">短信详单</p>
                 </div>
             </div>
         </div>
@@ -455,7 +455,7 @@
                 </div>
             </div>
             <div class="right-detail-bill">
-                <iframe frameborder="0" src="internetdetails.html"></iframe>
+                <iframe name="iframecucc" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -520,7 +520,7 @@
             </div>
         </div>
     </div>
-    <div class="flow-cucc-mmyz flow-cucc-alert" style="display: none">
+    <div class="flow-cucc-mmyz flow-cucc-alert" id="detailverify">
         <div class="flow-cucc-dingoutitle">
             详单随机码验证<i class="fa fa-times alert-close"></i>
             <div class="close"></div>
@@ -548,11 +548,11 @@
             <p class="mmyz-alert">已发送随机码到您的手机，请注意查收！</p>
         </div>
         <div class="flow-cucc-dingoujian">
-            <button type="button" class="btn btn-info" id="">点击查询</button>
+            <button type="button" class="btn btn-info" id="inquiry">点击查询</button>
         </div>
     </div>
 
-    <div class="flow-cucc-mmyz flow-cucc-alert" style="display: none">
+    <div class="flow-cucc-mmyz flow-cucc-alert" id="detailserve">
         <div class="flow-cucc-dingoutitle">
             <div class="user">
                 <div class="user-img"></div>

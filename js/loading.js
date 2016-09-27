@@ -33,7 +33,7 @@ function processerbarq(time){
 function processerbarh(time){
 
     $("#line").each(function(i,item){
-        var a='100'
+        var a='100';
         $(item).animate({
             width: a+"%"
         },time);

@@ -205,12 +205,17 @@ $(document).ready(function () {
         }
     });
     //search
-    $('.flow-search').click(function () {
+    $('#flow-search-number').focus(function () {
         if($('.search-xiala').css('display')=="none"){
             $('.search-xiala').css('display','block');
         }else{
             
         }
+    });
+    $('#flow-search-number').blur(function () {
+        setTimeout(function () {
+            $('.search-xiala').css('display','none');
+        },250);
     });
     $('.search-xiala p').click(function () {
         alert($(this).text());
@@ -224,17 +229,62 @@ $(document).ready(function () {
     // });
 
     //bill-check-chose
-    $('#billsearch').click(function () {
-        if($('.right-bill-check').css('display')=="none"){
-            $('.right-bill-check').css('display','block');
-            $('.right-detail-bill').css('display','none')
-        }
-    });
-    $('#detailbill').click(function () {
+    var herflink;
+    $('#voicedetail').click(function () {
         if($('.right-detail-bill').css('display')=="none"){
             $('.right-detail-bill').css('display','block');
             $('.right-bill-check').css('display','none')
+            $('#detailverify').css('display','block');
+        }else {
+            $('#detailverify').css('display','block');
         }
+        herflink="http://www.baidu.com";
+    });
+    $('#internetdetail').click(function () {
+        if($('.right-detail-bill').css('display')=="none"){
+            $('.right-detail-bill').css('display','block');
+            $('.right-bill-check').css('display','none');
+            $('#detailverify').css('display','block');
+        }else {
+            $('#detailverify').css('display','block');
+        }
+        herflink="index.html";
+    });
+    $('#messagedetail').click(function () {
+        if($('.right-detail-bill').css('display')=="none"){
+            $('.right-detail-bill').css('display','block');
+            $('.right-bill-check').css('display','none');
+            $('#detailverify').css('display','block');
+        }else {
+            $('#detailverify').css('display','block');
+        }
+        herflink="urgentstart.html";
+    });
+    $('#billsearch').click(function () {
+        if($('.right-bill-check').css('display')=="none"){
+            $('.right-bill-check').css('display','block');
+            $('.right-detail-bill').css('display','none');
+
+        }
+    });
+    $('#detailbill').click(function () {
+        if( $('.right-detail-bill').css('display')=="none"){
+            $('.right-detail-bill').css('display','block');
+            $('.right-bill-check').css('display','none');
+        }
+    });
+
+    //inquiry goto page
+    $('#inquiry').click(function () {
+        var a=1;
+       if(a==1){
+           window.iframecucc.window.location.href=herflink;
+       }
+    });
+
+    // close
+    $('.close').click(function () {
+        $('.close').parent().parent().css('display','none')
     });
     processerbarq(6000);
     processerbarh(3000);

@@ -846,6 +846,10 @@ html,body{-webkit-text-size-adjust:none;}
         color: #2ab6f1;
         cursor: pointer;
     }
+    .bill-check-head a{
+        color: #2ab6f1;
+        text-decoration: none;
+    }
     .bill-check-list{
         margin: 0 auto 0 auto;
         height: 60px;
@@ -857,6 +861,11 @@ html,body{-webkit-text-size-adjust:none;}
     .bill-check-list p{
         line-height: 20px !important;
         height: 20px;
+        cursor: pointer;
+    }
+    .bill-check-list a{
+        text-decoration: none;
+        color: #2ab6f1;
     }
     .flow-line-chart .right{
         width: 896px;
@@ -960,7 +969,6 @@ html,body{-webkit-text-size-adjust:none;}
         border-radius: 4px;
         z-index: 9999;
     }
-
     .flow-cucc-mmyz {
         display: none;
         width: 400px;

@@ -327,8 +327,8 @@ html,body{-webkit-text-size-adjust:none;}
 
     .traffic-usage-count-box {
         width: 700px;
-        background: #ffffff;
         float: left;
+        background: #ffffff;
         min-height: 220px;
     }
     /* phone-fee-histogram */
@@ -636,6 +636,8 @@ html,body{-webkit-text-size-adjust:none;}
     .urgent-all .histogram-flow-box{
         width: 100%;
         height: 220px;
+        overflow-y: auto;
+
         background: #ffffff;
         float: left;
     }
@@ -787,6 +789,9 @@ html,body{-webkit-text-size-adjust:none;}
         float: right;
         color: #ffffff;
         font-size: 16px;
+    }
+    .urgent-start-another-local .urgent-start-local-state .urgent-start-local-button-gray{
+        background: gray !important;
     }
     .urgent-start-another-local .urgent-start-local-state span{
         float: right;
@@ -2668,6 +2673,9 @@ html,body{-webkit-text-size-adjust:none;}
         float: right;
         color: #ffffff;
         font-size: 12px;
+    }
+    .urgent-start-another-local .urgent-start-local-state .urgent-start-local-button-gray{
+        background: gray !important;
     }
     .urgent-start-another-local .urgent-start-local-state span{
         float: right;
